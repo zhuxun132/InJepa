@@ -1,0 +1,12 @@
+stage_1:
+  target: stage1.RAE
+  params:
+    encoder_cls: 'Dinov2withNorm'
+    encoder_config_path: 'facebook/dinov2-with-registers-base'
+    encoder_input_size: 448
+    encoder_params: {'dinov2_path': 'facebook/dinov2-with-registers-base', 'normalize': True}
+    decoder_config_path: 'configs/decoder/ViTXL'
+    pretrained_decoder_path: 'models/decoders/dinov2/wReg_base/ViTXL_n08_i512/model.pt'
+    noise_tau: 0.
+    reshape_to_2d: True
+    normalization_stat_path: 'models/stats/dinov2/wReg_base/imagenet1k_512/stat.pt'

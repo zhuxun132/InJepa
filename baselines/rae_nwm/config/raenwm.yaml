@@ -1,0 +1,74 @@
+run_name: raenwm
+
+# Training settings
+results_dir: logs              # Output directory for training logs and artifacts
+train: True                    # Enable training mode (True) or evaluation mode (False)
+batch_size: 4                # Batch size per step (reduced to save memory)
+num_workers: 16                # DataLoader worker count
+model: CDiT-B/2               # Model architecture (CDiT Large, patch size 2)
+lr: 1e-4                      # Learning rate (Adam)
+final_lr: 1e-6
+lr_schedule: linear
+head_width: 2048            # DiT-DH head width (wider for higher capacity)
+head_depth: 2               # Head block depth
+head_num_heads: 16          # Head attention heads
+planning_score_type: dino   # Planning/CEM scoring: dino | lpips
+planning_traj_sampler: curve       # Trajectory sampler: curve | line
+# Action normalization
+normalize: True               # Normalize action space
+grad_clip_val: 1          # Gradient clipping value
+context_size: 4              # Context window size (history frames)
+
+# from_checkpoint: /path/to/your/checkpoint.pth.tar
+
+
+# WandB settings
+wandb:
+  enabled: true                           # Enable WandB logging
+  project: "raenwm-training"             # WandB project name
+  entity: null                            # Personal workspace (no team)
+  run_name: null  # Auto-generate a timestamped name in train.py
+  tags: ["raenwm", "rae", "cdit"]      # Experiment tags
+  notes: "Training RAENWM"               # Experiment notes
+
+config_path : 'RAE/configs/stage1/pretrained/DINOv2-B.yaml'
+
+transport:
+  model_type: velocity
+  path_type: linear
+  loss_type: velocity
+  time_dist_type: uniform
+  time_dist_shift_disable: false
+  num_steps: 50
+  sampling_method: euler
+
+# Distance category bounds
+distance:
+  min_dist_cat: -64           # Minimum distance category value
+  max_dist_cat: 64            # Maximum distance category value
+
+# Action output
+len_traj_pred: 64             # Predicted trajectory length (timesteps)
+
+image_size: 224               # Input image size (224x224)
+eval_num_batches: 3
+datasets:
+  recon:                      # recon dataset config
+    data_folder: data/recon   # Dataset root
+    train: data_splits/recon/train/  # Train split path (with traj_names.txt)
+    test: data_splits/recon/test/    # Test split path (with traj_names.txt)
+    goals_per_obs: 4          # Goals per observation
+
+  sacson:
+    data_folder: data/sacson
+    train: data_splits/sacson/train
+    test: data_splits/sacson/test
+    goals_per_obs: 4
+
+  scand:
+    data_folder: data/scand
+    train: data_splits/scand/train
+    test: data_splits/scand/test
+    goals_per_obs: 4
+
+

@@ -1,0 +1,15 @@
+timm
+transformers
+huggingface_hub
+dreamsim
+lpips
+torchdiffeq==0.2.5
+decord==0.6.0
+torcheval
+wandb
+evo
+matplotlib
+regex
+scipy
+scikit-learn
+threadpoolctl

@@ -1,0 +1,42 @@
+{
+  "variants": {
+    "VJEPA": {
+      "official_implementation_repository": "https://github.com/facebookresearch/vjepa2",
+      "source_revision": "204698b45b3712590f06245fbfba32d3be539812",
+      "weight_filename": "vjepa2_1_vitb_dist_vitG_384.pt",
+      "weight_sha256": "848a77c33cc9e6649ed2119c9bea1e2c569bcdab9539ff3e7c02ccc2959ddf4d",
+      "input_height_width": [
+        384,
+        384
+      ],
+      "spatial_output": [
+        576,
+        768
+      ],
+      "frozen": true,
+      "module_mode": "eval",
+      "feature_cache_dtype": "float32",
+      "preprocessing_sha256": "da5f73a48fb8f71dee05045b829f1a288a431c8d42a5e76d5614f34a0614e7a3",
+      "grid_transform": "Identity; no spatial pooling or extra whitening.",
+      "training_model_checkpoint_sha256": "181a1579c0158d29e44c23142e4395c99dd338d9e9e08224634501b6146a173e",
+      "weight_url": "https://dl.fbaipublicfiles.com/vjepa2/vjepa2_1_vitb_dist_vitG_384.pt",
+      "factory": "vjepa2_1_vit_base_384(pretrained=False)",
+      "load": "Read ema_encoder; remove module.backbone. prefix; strict state load; retain encoder only.",
+      "temporal_input_frames": 1,
+      "frame_replication": false,
+      "output": "Native spatial encoder tokens.",
+      "preprocessing": "uint8 RGB -> official short-side 438 bilinear resize, antialias -> center crop 384 -> float32 [0,1] -> ImageNet normalization."
+    }
+  },
+  "shared_image_channels": "RGB",
+  "mean": [
+    0.485,
+    0.456,
+    0.406
+  ],
+  "std": [
+    0.229,
+    0.224,
+    0.225
+  ]
+}

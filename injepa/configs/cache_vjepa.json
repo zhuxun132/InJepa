@@ -1,0 +1,40 @@
+{
+  "cache_batch": 64,
+  "canonical_manifest": "/path/to/canonical_manifest/J2J_CANONICAL_SOURCE_MANIFEST_V1.json",
+  "canonical_manifest_sha256": "975aa37b6dfa5f7d5fd6680a5ceb29823b4a25a1dbe376c3fe874617943c7104",
+  "checkpoint": "/path/to/checkpoint/vjepa2_1_vitb_dist_vitG_384.pt",
+  "checkpoint_bytes": 1664223428,
+  "checkpoint_sha256": "848a77c33cc9e6649ed2119c9bea1e2c569bcdab9539ff3e7c02ccc2959ddf4d",
+  "device": "cuda:0",
+  "devices": [
+    "cuda:0"
+  ],
+  "expected_rows": 849555,
+  "horizon": 4,
+  "identities": {
+    "checkpoint_sha256": "848a77c33cc9e6649ed2119c9bea1e2c569bcdab9539ff3e7c02ccc2959ddf4d",
+    "pool_sha256": "815079d56d54eea6ad8f1a2a5ace5bdc6384217bc8d10477ec3b1a9f67c8a22c",
+    "preprocess_sha256": "da5f73a48fb8f71dee05045b829f1a288a431c8d42a5e76d5614f34a0614e7a3",
+    "vjepa_source_commit": "204698b45b3712590f06245fbfba32d3be539812",
+    "whitening_sha256": null
+  },
+  "production_eligible": true,
+  "raw_output": "/path/to/raw_output/raw_cache",
+  "reconstruction_command": [
+    "/path/to/reconstruction_command/python",
+    "/path/to/reconstruction_command/build_released_cache.py",
+    "--config",
+    "/path/to/reconstruction_command/raw_cache_config.json"
+  ],
+  "representation": "raw",
+  "shard_rows": 256,
+  "spatial_shape": [
+    576,
+    768
+  ],
+  "streamvln_revision": "dc61ee9b4e90aa7ba63c1163b2134df5610dccb9",
+  "verified_payload_spool_receipt": "/path/to/verified_payload_spool_receipt/J2J_VERIFIED_RGB_PAYLOAD_SPOOL_V1.json",
+  "vjepa_source_root": "/path/to/vjepa_source_root/vjepa2_source",
+  "workers": 32,
+  "workspace": "/path/to/workspace/encoding_workspace"
+}

@@ -1,0 +1,70 @@
+{
+  "streamvln_revision": "dc61ee9b4e90aa7ba63c1163b2134df5610dccb9",
+  "assets": [
+    {
+      "bytes": 13018034,
+      "dataset": "R2R",
+      "logical_name": "R2R/annotations_v1-3.json",
+      "order": 0,
+      "relative_path": "R2R/annotations_v1-3.json",
+      "revision": "dc61ee9b4e90aa7ba63c1163b2134df5610dccb9",
+      "role": "annotation",
+      "section": "annotations",
+      "sha256": "d0a1c255c2641c61e2d586756a3208ed58e78cf7e781359305ce8f1360d54305"
+    },
+    {
+      "bytes": 42093931,
+      "dataset": "RxR",
+      "logical_name": "RxR/annotations.json",
+      "order": 1,
+      "relative_path": "RxR/annotations.json",
+      "revision": "dc61ee9b4e90aa7ba63c1163b2134df5610dccb9",
+      "role": "annotation",
+      "section": "annotations",
+      "sha256": "b40ecb7d8773edd9c045ca042446f962b1c9305c4149cbaeaf851fc7014ee330"
+    },
+    {
+      "bytes": 23578753959,
+      "dataset": "R2R",
+      "logical_name": "rgb/R2R_images_v1-3.tar.gz",
+      "order": 0,
+      "relative_path": "R2R_images_v1-3.tar.gz",
+      "revision": "dc61ee9b4e90aa7ba63c1163b2134df5610dccb9",
+      "role": "rgb_archive",
+      "section": "rgb_archives",
+      "sha256": "9dccce7260f8db486b99cb0dcf5f443604a4c7dca3d980d367ffc516da06c59a"
+    },
+    {
+      "bytes": 42949672960,
+      "dataset": "RxR",
+      "logical_name": "rgb/RxR_images.tar.gz.part0",
+      "order": 0,
+      "relative_path": "RxR_images.tar.gz.part0",
+      "revision": "dc61ee9b4e90aa7ba63c1163b2134df5610dccb9",
+      "role": "rgb_archive_part",
+      "section": "rgb_archives",
+      "sha256": "c855412c0af87e19dcdd8c31fe46357cc5bdebc9b9666412e1252c6ca3e5345d"
+    },
+    {
+      "bytes": 25498645409,
+      "dataset": "RxR",
+      "logical_name": "rgb/RxR_images.tar.gz.part1",
+      "order": 1,
+      "relative_path": "RxR_images.tar.gz.part1",
+      "revision": "dc61ee9b4e90aa7ba63c1163b2134df5610dccb9",
+      "role": "rgb_archive_part",
+      "section": "rgb_archives",
+      "sha256": "7227ce92e90b07ff7e8c70c9c855060f00d3fcd364f2c02fd94135539e8493b5"
+    }
+  ],
+  "trajectory_index_file": "trajectory_index.jsonl",
+  "trajectory_index_sha256": "8e1cdb73b0106e19531d136cf5d08d31f2ba8b3a340d297e79b5b5640fff5d17",
+  "original_canonical_ledger_sha256": "400b45391097dde59ed637ced0828d37592284b797051588d29ed72595e367ec",
+  "index_semantics": "One canonical physical trajectory per row. Annotation row and origin/goal indices are zero based; frame indices are positions in numeric frame order, not necessarily JPEG filename numbers.",
+  "index_partition_counts": {
+    "train": 8004,
+    "dev": 2265
+  },
+  "diagnostic_join": "Join offline_diagnostic_pairs.json trajectory_key to trajectory_index.jsonl; use source, annotation_row_index, and video_prefix to locate the published record.",
+  "scope": "This canonical index belongs to InJepa. Baseline filtering and partitions are specified separately in baseline_settings.json."
+}

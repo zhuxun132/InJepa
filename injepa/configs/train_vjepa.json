@@ -1,0 +1,151 @@
+{
+  "data": {
+    "canonical_manifest": "/path/to/canonical_manifest/J2J_CANONICAL_SOURCE_MANIFEST_V1.json",
+    "expected_identities": {
+      "checkpoint_sha256": "848a77c33cc9e6649ed2119c9bea1e2c569bcdab9539ff3e7c02ccc2959ddf4d",
+      "pool_sha256": "815079d56d54eea6ad8f1a2a5ace5bdc6384217bc8d10477ec3b1a9f67c8a22c",
+      "preprocess_sha256": "da5f73a48fb8f71dee05045b829f1a288a431c8d42a5e76d5614f34a0614e7a3",
+      "vjepa_source_commit": "204698b45b3712590f06245fbfba32d3be539812",
+      "whitening_sha256": null
+    },
+    "expected_parent_manifest_sha256": "44f9357e3b4e03358329043ea6eee3782faa68e8da6cb323c9d98a3c5c3c99df",
+    "pin_memory": true,
+    "require_production_eligible": true,
+    "require_stage": "RAW32",
+    "source_catalog": "/path/to/source_catalog/J2J_RELEASED_SOURCE_CATALOG_V1.json",
+    "z32_cache_dir": "/path/to/z32_cache_dir/raw_cache"
+  },
+  "experiment_id": "context4_stochastic_recurrent_raw_v1",
+  "identity": {
+    "cache_manifest_sha256": "f9dc567c7336ca0cacc436e7b6992dd434d0626d51c0c3a73691803281b9f48e",
+    "design_sha256": "d432ce2924283d74b08bd25f06e7e2c5dfe5017cebdfaaab0aec570eca3820d5",
+    "formal_protocol_sha256": "d432ce2924283d74b08bd25f06e7e2c5dfe5017cebdfaaab0aec570eca3820d5",
+    "intact_commit": "235b6a3a92db4d0f1b3a40597ab1f407db4fd15b",
+    "rae_nwm_commit": "0219ce41c44d515f86719dd763c1efe7c7f72519",
+    "source_manifest_sha256": "975aa37b6dfa5f7d5fd6680a5ceb29823b4a25a1dbe376c3fe874617943c7104",
+    "streamvln_revision": "dc61ee9b4e90aa7ba63c1163b2134df5610dccb9"
+  },
+  "initialization": {
+    "mode": "scratch_trainable",
+    "schema": "j2j_context4_trainable_init_v1"
+  },
+  "ledger": {
+    "active_q_future_blocks": 1218429,
+    "factual_origins": 640313,
+    "q_goal_view_occurrences": 1218429,
+    "train_trajectories": 8004
+  },
+  "model": {
+    "activation_checkpointing": true,
+    "actor_depth": 3,
+    "attention_backend": "auto",
+    "context_size": 4,
+    "dropout": 0.1,
+    "ffn_dim": 2048,
+    "forward_depth": 6,
+    "global_seed": 3072,
+    "goal_sampling_horizon": 4,
+    "grid_side": 24,
+    "heads": 16,
+    "hidden_dim": 768,
+    "horizon": 4,
+    "kl_beta": 0.05,
+    "latent_dim": 768,
+    "memory_norm": true,
+    "modes": 4,
+    "posterior_residual_init_std": 0.001,
+    "prediction_norm": "layernorm",
+    "proposal_architecture": "stochastic_recurrent",
+    "proposal_depth": 6,
+    "representation": "raw",
+    "retain_activation_blocks": [
+      "proposal.future.blocks.5",
+      "forward_core.blocks.0",
+      "forward_core.blocks.1",
+      "forward_core.blocks.2",
+      "forward_core.blocks.3",
+      "forward_core.blocks.4",
+      "forward_core.blocks.5",
+      "actor.blocks.0",
+      "actor.blocks.1",
+      "actor.blocks.2"
+    ],
+    "selector_enabled": false,
+    "sigma_epsilon": 0.0001,
+    "stability": {
+      "attention_temperature_init_factor": 0.3072,
+      "attention_temperature_max_factor": 2.0,
+      "ln_eps": 0.0001,
+      "ln_gain_bound": 2.0,
+      "posterior_log_scale_ratio_bound": 0.6931471805599453,
+      "posterior_mean_delta_bound": 4.0,
+      "prior_log_scale_bound": 0.6931471805599453,
+      "prior_mean_bound": 5.0,
+      "qk_eps": 0.0001,
+      "value_rms_bound": 2.0
+    },
+    "training_q_horizon": 1,
+    "training_qkv_normalization_backend": "inductor",
+    "trajectory_latent_dim": 128
+  },
+  "runtime": {
+    "cpu_affinity": "caller-bound",
+    "device": "cuda",
+    "precision": "bf16-mixed",
+    "prefetch": 2,
+    "process_group_timeout_seconds": 1800,
+    "resume_checkpoint": null,
+    "torch_threads_per_rank": 8,
+    "workers": 8
+  },
+  "training": {
+    "accumulation_steps": 1,
+    "anomaly_forensics": {
+      "max_events": 1,
+      "q_preclip_threshold": 10.0
+    },
+    "diagnostic_interval_updates": 100,
+    "effective_global_batch": 128,
+    "epochs": 30,
+    "microbatch_per_rank": 32,
+    "model_probe": {
+      "max_origins": 4,
+      "max_q_occurrences": 4,
+      "prior_samples": 2
+    },
+    "optimization": {
+      "gradient_clip_norms": {
+        "agf": 1.0,
+        "q": 1.0
+      },
+      "peak_learning_rates": {
+        "agf": 0.0003,
+        "q": 0.0002
+      },
+      "scheme": "q_agf_isolated_v1"
+    },
+    "optimizer": {
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "eps": 1e-08,
+      "name": "AdamW",
+      "weight_decay": 0.001
+    },
+    "qg_objective": "posterior_sample",
+    "run_kind": "formal",
+    "schedule": "cosine_to_zero",
+    "warmup_fraction": 0.01,
+    "world_size": 4
+  },
+  "training_contract": {
+    "id": "context4_stochastic_recurrent_raw_scratch_qagf_v1",
+    "optimization_protocol_sha256": "d432ce2924283d74b08bd25f06e7e2c5dfe5017cebdfaaab0aec570eca3820d5"
+  },
+  "variant_identity": {
+    "loss_spec_sha": "d432ce2924283d74b08bd25f06e7e2c5dfe5017cebdfaaab0aec570eca3820d5",
+    "transform_spec_sha": "d432ce2924283d74b08bd25f06e7e2c5dfe5017cebdfaaab0aec570eca3820d5",
+    "variant_id": "context4_stochastic_recurrent_raw_v1"
+  }
+}

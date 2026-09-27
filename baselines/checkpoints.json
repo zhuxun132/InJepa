@@ -1,0 +1,29 @@
+{
+  "nomad": {
+    "checkpoint_url": "https://drive.google.com/file/d/1YJhkkMJAYOiKNyCaelbS_alpUpAJsOUb/view",
+    "checkpoint_bytes": 76473631,
+    "checkpoint_sha256": "70f79b8262527e20e56ced64a3e3d7ef91855bc9e7c3fa348d78edcb83c6a333"
+  },
+  "rae_nwm": {
+    "weights": "EMA",
+    "update": 155000,
+    "saved_epoch_zero_based": 21,
+    "selection_metric": "Official DreamSim evaluation on the dev set",
+    "selection_rule": "Lowest recorded dev DreamSim error among evaluated checkpoints.",
+    "recorded_dreamsim": 0.3671,
+    "selection_is_not_schedule_completion": true,
+    "ema_export_sha256": "750c5f368d11e7c7beebdd662053a75ef26f04489f3853a2a9928c691bee3d57",
+    "source_full_checkpoint_sha256": "2f86dbe793e406b29bd49f7e4e2924bbf12821aff6c58c3015b803481e692657"
+  },
+  "lwm_croco": {
+    "selection": "Final scheduled world model and reinforcement stages.",
+    "wm_sha256": "7a2f43f9ec0c68b5caae45bb142fe843a124743e5fef4585a2f52111fc8c55e3",
+    "imitation_sha256": "0903d86a9037b677b4e7f429eee92de963ef6e89e333311f474feb6ab027125d",
+    "reinforcement_sha256": "7d16b02aee9f53c87814ab469ac48b8739367272ad3b71e631d22298109e4aa3"
+  },
+  "lwm_vjepa": {
+    "wm": "cf4b24a16904ed3b91bcfe3c3e7deb4f7c207b588b21fb2e49952c06af0816b9",
+    "imitation": "e80bab89ed293fdb42899df7fd880c7c4ef603c750f21c419a7addbe8b160f35",
+    "reinforcement": "b26ac30f867c5caee456c91530badab344c9a4e60b262278fc4db5304ea4c6a3"
+  }
+}

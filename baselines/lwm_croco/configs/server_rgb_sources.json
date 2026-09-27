@@ -1,0 +1,22 @@
+{
+  "r2r": {
+    "annotations": "/path/to/annotations/annotations_v1-3.json",
+    "existing_images": "/path/to/existing_images/images",
+    "archive_parts": [
+      "/path/to/archive_parts/R2R_images_v1-3.tar.gz"
+    ],
+    "expected_archive_sha256": "9dccce7260f8db486b99cb0dcf5f443604a4c7dca3d980d367ffc516da06c59a"
+  },
+  "rxr": {
+    "annotations": "/path/to/annotations/annotations.json",
+    "existing_images": "/path/to/existing_images/images",
+    "archive_parts": [
+      "/path/to/archive_parts/RxR_images.tar.gz.part0",
+      "/path/to/archive_parts/RxR_images.tar.gz.part1"
+    ],
+    "expected_archive_sha256": [
+      "c855412c0af87e19dcdd8c31fe46357cc5bdebc9b9666412e1252c6ca3e5345d",
+      "7227ce92e90b07ff7e8c70c9c855060f00d3fcd364f2c02fd94135539e8493b5"
+    ]
+  }
+}

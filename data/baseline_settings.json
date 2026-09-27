@@ -1,0 +1,415 @@
+{
+  "scope": "Baselines reported in the main navigation comparison.",
+  "parameter_source_priority": [
+    "Original paper training settings",
+    "Official code defaults for unspecified values",
+    "Explicitly listed local adapter values when neither source specifies them"
+  ],
+  "batch_semantics": "Global effective batch, including all ranks and gradient accumulation.",
+  "common_evaluation": {
+    "task_file": "clean150_tasks.json",
+    "settings_file": "evaluation_settings.json",
+    "control_steps_per_plan": 1,
+    "max_environment_steps": 200,
+    "arrival_geodesic_distance_m_less_than": 1.0,
+    "planning_budgets_equalized": false,
+    "latency_hardware": [
+      "RTX 3090",
+      "RTX 4090"
+    ],
+    "latency_scope": "See appendix for hardware and concurrency of each archived cohort."
+  },
+  "RAE-NWM": {
+    "paper": "https://arxiv.org/abs/2603.09241",
+    "official_repository": "https://github.com/20robo/raenwm.git",
+    "official_revision": "0219ce41c44d515f86719dd763c1efe7c7f72519",
+    "architecture": {
+      "model_key": "CDiT-B/2",
+      "patch_size_in_released_constructor": 1,
+      "backbone_depth": 12,
+      "hidden_width": 768,
+      "attention_heads": 12,
+      "head_depth": 2,
+      "head_width": 2048,
+      "head_attention_heads": 16,
+      "visual_encoder": "facebook/dinov2-with-registers-base",
+      "encoder_input_size": 224,
+      "latent_grid": [
+        256,
+        768
+      ],
+      "decoder": "Official pretrained RAE ViTXL decoder",
+      "latent_statistics": "Official dinov2/wReg_base/imagenet1k/stat.pt",
+      "latent_normalization_eps": 1e-05,
+      "noise_tau": 0.0
+    },
+    "training": {
+      "optimizer": "AdamW",
+      "betas": [
+        0.9,
+        0.95
+      ],
+      "eps": 1e-08,
+      "weight_decay": 0.0,
+      "gradient_clip_norm": 1.0,
+      "ema_decay": 0.9999,
+      "initial_lr": 0.0002,
+      "final_lr": 2e-06,
+      "lr_schedule": "linear",
+      "schedule_epochs": 50,
+      "seed": 42,
+      "global_batch": 96,
+      "hardware": "3 RTX 3090",
+      "local_microbatch": 8,
+      "accumulation_steps": 4,
+      "precision": "BF16 mixed",
+      "torch_compile": true,
+      "workers_per_process": 16,
+      "checkpoint_interval_updates": 5000,
+      "validation_interval_updates": 1000,
+      "validation_batches_per_process": 3,
+      "log_interval_updates": 100,
+      "target": "velocity",
+      "flow_path": "linear",
+      "loss": "velocity",
+      "time_distribution": "uniform",
+      "time_dist_shift_disable": false,
+      "context_frames": 4,
+      "goals_per_observation": 4,
+      "prediction_window_frames": 64,
+      "relative_time_scale": 128
+    },
+    "evaluated_checkpoint": {
+      "weights": "EMA",
+      "update": 155000,
+      "saved_epoch_zero_based": 21,
+      "selection_metric": "Official DreamSim evaluation on the dev set",
+      "selection_rule": "Lowest recorded dev DreamSim error among evaluated checkpoints.",
+      "recorded_dreamsim": 0.3671,
+      "selection_is_not_schedule_completion": true,
+      "ema_export_sha256": "750c5f368d11e7c7beebdd662053a75ef26f04489f3853a2a9928c691bee3d57",
+      "source_full_checkpoint_sha256": "2f86dbe793e406b29bd49f7e4e2924bbf12821aff6c58c3015b803481e692657"
+    },
+    "data_adapter": {
+      "source": "Published StreamVLN R2R/RxR RGB-action trajectories",
+      "rgb": "Original published frames, in numeric frame order.",
+      "language_input": false,
+      "pose_metadata": "Planar integration of recorded commands from zero pose; not measured simulator poses.",
+      "forward_m": 0.25,
+      "turn_degrees": 15,
+      "split_rule": "SHA256(scene_token UTF-8).digest()[0] % 10: 0 -> validation, otherwise training.",
+      "train_trajectories": 15030,
+      "validation_trajectories": 1208,
+      "train_origins": 715385,
+      "context_frames": 4,
+      "target_offset_bounds": [
+        -64,
+        64
+      ],
+      "sampled_targets": 4,
+      "exclude_current_when_alternatives_exist": true,
+      "sampling": "Uniform offsets; without replacement when at least four are available.",
+      "planar_coordinate_scale_m": 0.25,
+      "normalized_distance_bounds": [
+        -64,
+        64
+      ],
+      "image_transform": "Official CenterCropAR with aspect ratio 4/3, resize 224x224, tensor conversion.",
+      "pixel_handling": "Loader maps to [-1,1]; trainer restores [0,1] before RAE applies encoder normalization.",
+      "minimum_frames": 68,
+      "input_annotation_records": 30809,
+      "excluded_short_records": 14571,
+      "retained_records": 16238,
+      "materialized_RGB_frames": 1868655,
+      "count_semantics": "Published annotation/video records; no canonical physical-trajectory deduplication as used by InJepa and LWM.",
+      "scene_split_scope": "RAE scene-hash partition, independent of the InJepa 50/11 building split."
+    },
+    "planning": {
+      "candidates": 120,
+      "horizon": 8,
+      "CEM_updates": 1,
+      "CEM_elites": 3,
+      "trajectory_parameterization": "curve",
+      "goal_score": "terminal DINO feature distance",
+      "euler_points_evaluated": 10,
+      "euler_points_original": 50
+    },
+    "controller": {
+      "max_displacement_m": 0.25,
+      "max_yaw_degrees": 15,
+      "integration_seconds": 1.0
+    },
+    "pretrained_assets": {
+      "hf_revision": "a1d738ccfa7ae170945f210395d99dde8adb1805",
+      "sha256": {
+        "stage1_config": "b28412264fc56b812c652c93403627bf11e00c131f4b0a6fc83f5b4339fc63a5",
+        "decoder_config": "0c9845cd65131b4074fbac77f7d36fdcdca71f455e75ae9ba169b34b8e1e3614",
+        "decoder": "5fedf7c9660476a709e122cef18385c917532914a23f034388e1c1a52bde2be6",
+        "stats": "84ede66def5e6e3f25679334dc89cf63b12aacb99cbf0f5ae7ed4ad3187f7e59",
+        "hf_config": "6af60aa760138fc90db0ba37b7701730b140b9bf1742514412d03050e72bf7e0",
+        "hf_processor": "14e780d86fa1861f8751f868d7f45425b5feb55c38ca26f152ca5097ab30f828",
+        "hf_weights": "7a6f7b3b9fa4b8732e707476a03cd6cdce210048582f21aafb7991c17d98e362"
+      }
+    }
+  },
+  "LWM-CroCo": {
+    "paper": "https://arxiv.org/abs/2608.26190",
+    "official_repository": "https://github.com/wzm206/LWM.git",
+    "official_revision": "5d2e0fd6c8b46850e6c0ac528d23a2db863e86d2",
+    "training_implementation": "Local paper-based training adapter around released model/inference modules; upstream training code was not released.",
+    "architecture": {
+      "visual_encoder": "CroCo-v2 ViT-Base",
+      "image_size": [
+        224,
+        224
+      ],
+      "image_transform": "Resize and ImageNet normalization",
+      "visual_grid": [
+        196,
+        768
+      ],
+      "visual_projection": [
+        768,
+        384
+      ],
+      "action_mlp": [
+        3,
+        512,
+        384
+      ],
+      "compatibility_decoder_layers": 6,
+      "compatibility_attention_heads": 6,
+      "policy_decoder_layers": 6,
+      "policy_attention_heads": 4,
+      "decoder_width": 384,
+      "decoder_ffn_width": 2048,
+      "decoder_dropout": 0.1,
+      "policy_position_dropout": 0.05,
+      "action_codebook_size": 64,
+      "trajectory_codebook_size": 64,
+      "max_future_waypoints": 63,
+      "token_sequence_length_with_special_tokens": 65,
+      "token_vocabulary_size": 67,
+      "BOS": 64,
+      "EOS": 65,
+      "PAD": 66
+    },
+    "initialization": {
+      "croco_checkpoint": "CroCo_V2_ViTBase_BaseDecoder.pth",
+      "sha256": "f5f338ebca4257372d543941065801ef518cea9abced737f742f094a60f8a650"
+    },
+    "training": {
+      "optimizer": "Adam",
+      "adam": {
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "eps": 1e-08,
+        "weight_decay": 0.0
+      },
+      "seed": 0,
+      "wm": {
+        "epochs": 50,
+        "global_batch": 8,
+        "lr": 5e-05,
+        "warmup_epochs": 5,
+        "num_candidates": 4,
+        "epsilon_m": 0.01
+      },
+      "pseudo": {
+        "batch_size": 1
+      },
+      "imitation": {
+        "epochs": 40,
+        "global_batch": 24,
+        "lr": 0.0001,
+        "warmup_epochs": 4
+      },
+      "reinforcement": {
+        "epochs": 40,
+        "global_batch": 24,
+        "lr": 0.0001,
+        "warmup_epochs": 4,
+        "num_sample": 5,
+        "temperature": 1.0,
+        "beta": 0.01,
+        "clip_epsilon": 0.2
+      },
+      "schedule": "Linear warmup, constant learning rate thereafter.",
+      "precision": "FP32",
+      "gradient_clipping": null,
+      "reinforcement_reference": "Fixed final imitation policy.",
+      "workers_per_process": 4,
+      "checkpoint_interval_updates": 1000,
+      "log_interval_updates": 10,
+      "completed_updates": {
+        "wm": 32700,
+        "imitation": 8720,
+        "reinforcement": 8680
+      },
+      "completed_epochs": {
+        "wm": 50,
+        "imitation": 40,
+        "reinforcement": 40
+      },
+      "hardware": {
+        "wm": "2 RTX 3090",
+        "imitation": "2 RTX 3090",
+        "reinforcement": "1 RTX 3090"
+      },
+      "reinforcement_microbatch": 8,
+      "reinforcement_accumulation": 3,
+      "visual_encoder_backpropagation": false
+    },
+    "parameter_provenance": {
+      "paper": "WM Adam/50 epochs/batch8/LR5e-5/warmup5; policy Adam/40 epochs/batch24/LR1e-4/warmup4; two codebooks64; max64frames",
+      "source": "Released model interfaces, action scaling, tokenization, and sampling defaults.",
+      "local_adapter_values_not_disclosed_by_paper": "Global batch interpretation; Adam fine settings; constant LR after warmup; M4/epsilon0.01m; RL beta/clip/fixed IL reference; applying policy40/LR/warmup separately to RL because a separate RL budget is not disclosed",
+      "data_sampling": "StreamVLN adaptation, NOT disclosed author recipe: physical trajectory dedup; one anchor per at-most-63-anchor bin per epoch; local no-replacement cycles; IL fixed epoch0 pairs; original model/loss/batch/LR/epochs unchanged.",
+      "policy_attention_heads": "Four in the released executable module; six in the paper description. Reproduction retains the released module."
+    },
+    "data_adapter": {
+      "source": "Published StreamVLN R2R/RxR RGB-action trajectories",
+      "pose_metadata": "Replay recorded actions from matched source episode reset pose in Habitat; retain measured poses aligned to original frame indices.",
+      "training_RGB": "Original published RGB only; replay does not render new training images.",
+      "replay_forward_m": 0.25,
+      "replay_turn_degrees": 15,
+      "replay_allow_sliding": true,
+      "keyframe_min_planar_displacement_m": 0.2,
+      "action_coordinates": "Cumulative planar forward/left displacement and yaw relative to the origin.",
+      "max_future_keyframes": 63,
+      "padding": "Zeros with a valid-prefix mask.",
+      "language_aliases": "Deduplicated by physical trajectory identity.",
+      "partition": "Seeded hash of physical trajectory identity splits training into disjoint WM/IL and RL halves; validation is separate.",
+      "trajectory_counts": {
+        "wm_imitation": 3994,
+        "reinforcement": 3995,
+        "validation": 2265
+      },
+      "sampling": {
+        "strategy": "physical_stratified_cycle_v1",
+        "anchor_bin_size": 63
+      },
+      "epoch_sampling": "One origin per bin per epoch, cycling without replacement.",
+      "imitation_pairs": "Fixed epoch 0 origin-goal pairs.",
+      "world_model_candidates": "One factual and three candidates from other physical trajectories.",
+      "target": "log(planar distance in metres + 0.01), masked squared error.",
+      "model_action_scale": 0.1,
+      "pseudo_labels": "Best predicted prefix over the 64 trajectory codebook centers.",
+      "codebook_fit_partition": "World model / imitation only",
+      "kmeans": {
+        "centers": 64,
+        "init": "k-means++",
+        "n_init": 1,
+        "max_iter": 300,
+        "tol": 0.0001,
+        "algorithm": "lloyd",
+        "seed": 0
+      },
+      "minimum_keyframes": 2,
+      "partition_order": "Sort unique training pose keys by (SHA256(UTF8(str(seed) + \":\" + pose_key)).hexdigest(), pose_key); the first floor(N/2) enter WM/imitation and the rest reinforcement.",
+      "dedup_representative": "Within each physical pose key, retain the first (source, video) in lexicographic order after verifying identical pose and frame alignment.",
+      "goal_sampling": "Uniformly sample one valid future keyframe within the current at-most-63-step window.",
+      "counterfactual_sampling": "Uniformly draw a different physical trajectory, then a uniform valid origin on that trajectory; reuse its own origin-relative planar action sequence.",
+      "geometry_units": "Forward and left in metres; yaw in radians wrapped to [-pi,pi).",
+      "geometry_axes": "Habitat Y-up; local -Z forward; positive Y rotation turns left.",
+      "pose_key_definition": {
+        "hash": "SHA256 of UTF-8 JSON with sorted keys, compact separators, allow_nan=False",
+        "fields": [
+          "runtime",
+          "asset",
+          "scene",
+          "position",
+          "rotation",
+          "actions"
+        ],
+        "field_meaning": "Replay runtime identity, scene asset identity, scene ID, source episode start position and quaternion, and full recorded command sequence. Shared reset and commands reuse one replay geometry."
+      }
+    },
+    "reported_checkpoints": {
+      "selection": "Final scheduled world model and reinforcement stages.",
+      "wm_sha256": "7a2f43f9ec0c68b5caae45bb142fe843a124743e5fef4585a2f52111fc8c55e3",
+      "imitation_sha256": "0903d86a9037b677b4e7f429eee92de963ef6e89e333311f474feb6ab027125d",
+      "reinforcement_sha256": "7d16b02aee9f53c87814ab469ac48b8739367272ad3b71e631d22298109e4aa3"
+    },
+    "codebook_sha256": {
+      "action_centers": "296136e486eeaef9cc9832e5ef743ba0344f00b8ff360677a73cd408d279093c",
+      "trajectory_centers": "b67ee1e3ca429f43e68f3b017659ea71f932935df1311993655d844d34bce8d9"
+    },
+    "planning": {
+      "candidates": 32,
+      "temperature": 1.0,
+      "max_waypoints": 63,
+      "selection": "Predicted compatibility of each valid trajectory"
+    },
+    "controller": {
+      "max_displacement_m": 0.25,
+      "max_yaw_degrees": 15,
+      "integration_seconds": 1.0
+    },
+    "loss_reductions": {
+      "world_model": "Squared log-distance error averaged over valid candidate timesteps.",
+      "imitation": "Cross entropy averaged over valid target tokens.",
+      "reinforcement_reward": "Negative world-model compatibility at the last valid decoded waypoint.",
+      "advantage": "Within-group centering and population standard deviation; a constant-reward group has zero advantage.",
+      "likelihood_ratio": "Sequence probability ratio against the fixed imitation reference; capped above at 1+clip_epsilon as in the implemented min(r,clip(r)) expression.",
+      "KL": "Full categorical KL at each valid token, summed along the sequence.",
+      "reinforcement": "Mean of -capped_ratio*advantage + beta*sequence_KL over batch and sampled trajectories."
+    },
+    "data_partition_receipts": {
+      "wm_il": {
+        "rows": 3994,
+        "physical_trajectories": 3994,
+        "windows": 207943,
+        "sha256": "47f20ac4785983a1d7eb99b1214ea8fc7cd0f27c4927becac1eb239e9d8bba51"
+      },
+      "rl": {
+        "rows": 3995,
+        "physical_trajectories": 3995,
+        "windows": 205675,
+        "sha256": "7d26b807b50e821f3f4e0dbb2ac724fb959844862048cb5b46f34df524bb5395"
+      },
+      "dev": {
+        "rows": 2265,
+        "physical_trajectories": 2265,
+        "windows": 129387,
+        "sha256": "84a8db92337438424d75551ed28df54c242fa30ff884cb493d1e065b455b211b"
+      }
+    },
+    "codebook_fitting": {
+      "sklearn_version": "1.6.1",
+      "action_samples": 6600847,
+      "trajectory_samples": 35910
+    },
+    "supplied_codebooks": {
+      "action_centers": "lwm_action_centers.json",
+      "trajectory_centers": "lwm_trajectory_centers.json"
+    }
+  },
+  "LWM-VJEPA": {
+    "inherits": "LWM-CroCo",
+    "delta_only": true,
+    "visual_frontend": "V-JEPA 2.1 ViT-Base",
+    "checkpoint_sha256": "848a77c33cc9e6649ed2119c9bea1e2c569bcdab9539ff3e7c02ccc2959ddf4d",
+    "source_revision": "204698b45b3712590f06245fbfba32d3be539812",
+    "preprocessing": "Official short-side resize 438, center crop 384x384, ImageNet normalization.",
+    "visual_grid": [
+      576,
+      768
+    ],
+    "temporal_input_frames": 1,
+    "alignment_changes": [
+      "Rebuild spatial position indices for the 24x24 grid",
+      "Set policy visual token count to 576"
+    ],
+    "remaining_settings": "All other model, data, training, and planning settings are identical to LWM-CroCo.",
+    "training_hardware": "2 RTX 4090",
+    "reported_checkpoints_sha256": {
+      "wm": "cf4b24a16904ed3b91bcfe3c3e7deb4f7c207b588b21fb2e49952c06af0816b9",
+      "imitation": "e80bab89ed293fdb42899df7fd880c7c4ef603c750f21c419a7addbe8b160f35",
+      "reinforcement": "b26ac30f867c5caee456c91530badab344c9a4e60b262278fc4db5304ea4c6a3"
+    }
+  },
+  "data_comparison_scope": "Same released StreamVLN source does not imply identical filtering, sample multiplicity, or training/validation splits. NoMaD uses the released checkpoint only."
+}

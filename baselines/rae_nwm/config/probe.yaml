@@ -1,0 +1,72 @@
+run_name: probe_forward_linear
+results_dir: logs_probe
+train: True
+
+# DataLoader
+batch_size: 256
+num_workers: 16
+
+# Data / model
+normalize: True
+context_size: 1
+image_size: 256
+
+# Encoder
+encoder:
+  type: "rae"  # rae | vae
+  config_path: "RAE/configs/stage1/pretrained/DINOv2-B.yaml"
+
+# Probe-only distance range (local)
+distance:
+  min_dist_cat: -16
+  max_dist_cat: 16
+
+# Probe-only horizon for computing actions
+len_traj_pred: 10
+
+# Evaluation
+eval_num_batches: 30
+
+# Logging
+wandb:
+  enabled: false
+  project: "raenwm-probe"
+  entity: null
+  run_name: null
+  tags: ["probe", "forward_dynamics", "linear"]
+  notes: "Linear forward dynamics probe: predict z_{t+k} from z_t and action."
+
+# Forward dynamics probe (linear)
+pose_probe:
+  task: "forward_dynamics"  #forward_dynamics
+  action_dim: 3
+  forward_step: 2
+  predict_residual: true
+  forward_loss: "huber"  
+  lr: 1e-4
+  min_lr: 1e-4
+  weight_decay: 0.01
+  grad_clip_val: 1.0
+  warmup_steps: 0
+
+  max_steps: 60000
+  log_every_steps: 100
+  eval_every_steps: 1000
+  save_every_steps: 1000
+
+datasets:
+  recon:
+    data_folder: data/recon
+    train: data_splits/recon/train/
+    test: data_splits/recon/test/
+    goals_per_obs: 4
+  sacson:
+    data_folder: data/sacson
+    train: data_splits/sacson/train
+    test: data_splits/sacson/test
+    goals_per_obs: 4
+  scand:
+    data_folder: data/scand
+    train: data_splits/scand/train
+    test: data_splits/scand/test
+    goals_per_obs: 4
