@@ -1,5 +1,7 @@
 # Third-party sources
 
+The first copyright notice in the root [LICENSE](LICENSE) identifies the InJepa authors for their contributions. The second preserves the INTACT authors' copyright for inherited portions. The original INTACT license is also retained in `injepa/LICENSE`.
+
 Keep each component's license and copyright notice when redistributing its source.
 
 | Component | Upstream | Revision / attribution |
