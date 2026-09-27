@@ -1,0 +1,12 @@
+stage_1:
+  target: stage1.RAE
+  params:
+    encoder_cls: 'SigLIP2wNorm'
+    encoder_config_path: 'google/siglip2-base-patch16-256'
+    encoder_input_size: 256
+    encoder_params: {'model_name': 'google/siglip2-base-patch16-256'}
+    decoder_config_path: 'RAE/configs/decoder/ViTXL'
+    pretrained_decoder_path: 'models/decoders/siglip2/base_p16_i256/ViTXL_n08/model.pt'
+    noise_tau: 0.
+    reshape_to_2d: True
+    normalization_stat_path: 'models/stats/siglip2/base_p16_i256/ImageNet1k/stat.pt'

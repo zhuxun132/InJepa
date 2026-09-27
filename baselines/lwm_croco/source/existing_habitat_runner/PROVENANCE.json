@@ -1,0 +1,37 @@
+{
+  "status": "EXISTING_RUNNER_SUBSET",
+  "files": [
+    {
+      "source": "/path/to/workspace/j2j-h4-imagegoal/j2j/__init__.py",
+      "path": "j2j/__init__.py",
+      "bytes": 49,
+      "sha256": "da8cf4de4f97a5b4d423115d2abe41bf3ede8bdc5cb776ba1e680f5aa9d528bc"
+    },
+    {
+      "source": "/path/to/workspace/j2j-h4-imagegoal/j2j/adapter.py",
+      "path": "j2j/adapter.py",
+      "bytes": 1443,
+      "sha256": "7806cefd64f40525e84a0e0594a4fbf0713909a9cf55ac906d84447f71ff3c19"
+    },
+    {
+      "source": "/path/to/workspace/j2j-h4-imagegoal/j2j/evaluation/contracts.py",
+      "path": "j2j/evaluation/contracts.py",
+      "bytes": 17961,
+      "sha256": "ef63b6fd64d698d94926f622380f66670436eccc9d2ef4919d5835f812949290"
+    },
+    {
+      "source": "/path/to/workspace/j2j-h4-imagegoal/j2j/evaluation/metrics.py",
+      "path": "j2j/evaluation/metrics.py",
+      "bytes": 18196,
+      "sha256": "7d3d97c9e249d79c7fa53af729c84eb4a4521044fe785b39edd72c7f4bde5922"
+    },
+    {
+      "source": "/path/to/workspace/j2j-h4-imagegoal/j2j/evaluation/habitat_runner.py",
+      "path": "j2j/evaluation/habitat_runner.py",
+      "bytes": 44501,
+      "sha256": "8f275ea2c464cc5b024a96bf4b8658a789ba5e30721ec60c8cb4672feeebc217"
+    }
+  ],
+  "packaging_delta": "evaluation initializer omits unrelated model factory reexports; runner/contracts/metrics/ActionId unchanged",
+  "purpose": "Reuse existing Habitat ImageGoal loop and metrics with continuous_action_handler"
+}

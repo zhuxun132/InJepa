@@ -1,0 +1,59 @@
+{
+  "identity": "lwm-stream-physical-stratified-v2-frozen-visual-encoder",
+  "codebooks": "/path/to/codebooks/codebooks_physical_v2",
+  "croco": "/path/to/croco/CroCo_V2_ViTBase_BaseDecoder.pth",
+  "croco_sha256": "f5f338ebca4257372d543941065801ef518cea9abced737f742f094a60f8a650",
+  "output": "/path/to/output/formal",
+  "seed": 0,
+  "workers": 4,
+  "micro_batch": 8,
+  "checkpoint_updates": 1000,
+  "log_updates": 10,
+  "adam": {
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1e-08,
+    "weight_decay": 0.0
+  },
+  "wm": {
+    "epochs": 50,
+    "global_batch": 8,
+    "lr": 5e-05,
+    "warmup_epochs": 5,
+    "num_candidates": 4,
+    "epsilon_m": 0.01
+  },
+  "pseudo": {
+    "batch_size": 1
+  },
+  "il": {
+    "epochs": 40,
+    "global_batch": 24,
+    "lr": 0.0001,
+    "warmup_epochs": 4
+  },
+  "rl": {
+    "epochs": 40,
+    "global_batch": 24,
+    "lr": 0.0001,
+    "warmup_epochs": 4,
+    "num_sample": 5,
+    "temperature": 1.0,
+    "beta": 0.01,
+    "clip_epsilon": 0.2
+  },
+  "provenance": {
+    "paper": "WM Adam/50 epochs/batch8/LR5e-5/warmup5; policy Adam/40 epochs/batch24/LR1e-4/warmup4; two codebooks64; max64frames",
+    "source": "Official networks unchanged; motion geometry scaled0.1 only at original model boundary; rollout num_sample5/temperature1 defaults",
+    "provisional": "Global batch interpretation; Adam fine settings; constant LR after warmup; M4/epsilon0.01m; RL beta/clip/fixed IL reference; applying policy40/LR/warmup separately to RL because a separate RL budget is not disclosed",
+    "runtime_only": "workers/micro_batch/log/checkpoint cadence are configurable execution choices, not author hyperparameters",
+    "data_sampling": "StreamVLN adaptation, NOT disclosed author recipe: physical trajectory dedup; one anchor per at-most-63-anchor bin per epoch; local no-replacement cycles; IL fixed epoch0 pairs; original model/loss/batch/LR/epochs unchanged."
+  },
+  "sampling": {
+    "strategy": "physical_stratified_cycle_v1",
+    "anchor_bin_size": 63
+  },
+  "freeze_visual_encoder": true
+}

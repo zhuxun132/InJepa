@@ -1,0 +1,56 @@
+# RAE-stream B1 overlay.  The executable training values below follow the
+# RAE-NWM paper (Appendix 0.A.2) and the authors' official README command.
+# Only the dataset/run identity is otherwise changed; official model and
+# training source files remain untouched.
+run_name: rae_stream
+results_dir: logs
+train: True
+batch_size: 96              # paper total batch; world>1 derives 96/world per rank
+num_workers: 16
+model: CDiT-B/2
+lr: 2e-4                    # paper: initial learning rate
+final_lr: 2e-6             # paper: final learning rate
+lr_schedule: linear
+weight_decay: 0.0          # paper: AdamW weight decay
+head_width: 2048
+head_depth: 2
+head_num_heads: 16
+planning_score_type: dino
+planning_traj_sampler: curve
+normalize: True
+grad_clip_val: 1
+context_size: 4
+
+wandb:
+  enabled: true
+  project: "raenwm-training"
+  entity: null
+  run_name: null
+  tags: ["rae_stream", "rae", "cdit"]
+  notes: "RAE-NWM-StreamVLN-command-derived (runtime profile is receipt-bound)"
+
+config_path: 'RAE/configs/stage1/pretrained/DINOv2-B.yaml'
+
+transport:
+  model_type: velocity
+  path_type: linear
+  loss_type: velocity
+  time_dist_type: uniform
+  time_dist_shift_disable: false
+  num_steps: 50
+  sampling_method: euler
+
+distance:
+  min_dist_cat: -64
+  max_dist_cat: 64
+
+len_traj_pred: 64
+image_size: 224
+eval_num_batches: 3
+
+datasets:
+  rae_stream:
+    data_folder: data/rae_stream
+    train: data_splits/rae_stream/train/
+    test: data_splits/rae_stream/test/
+    goals_per_obs: 4

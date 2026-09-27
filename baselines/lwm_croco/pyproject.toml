@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lwm-stream"
+version = "0.1.0"
+description = "StreamVLN data and training adapters for the official LWM source"
+requires-python = ">=3.9"
+dependencies = ["torch", "torchvision", "numpy", "Pillow", "timm"]
+
+[tool.setuptools]
+packages = ["lwm_stream", "lwm", "lwm.croco"]
+package-dir = {"lwm_stream" = "source/lwm_stream", "lwm" = "source/official/lwm"}

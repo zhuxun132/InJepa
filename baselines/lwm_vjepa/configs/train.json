@@ -1,0 +1,79 @@
+{
+  "identity": "lwm_vjepa21_encoder_croco_fusion_v2",
+  "codebooks": "/path/to/codebooks/codebooks_physical_v2",
+  "croco": "/path/to/croco/CroCo_V2_ViTBase_BaseDecoder.pth",
+  "croco_sha256": "f5f338ebca4257372d543941065801ef518cea9abced737f742f094a60f8a650",
+  "output": "/path/to/output/native384_scratch",
+  "seed": 0,
+  "workers": 4,
+  "micro_batch": 24,
+  "checkpoint_updates": 1000,
+  "log_updates": 10,
+  "adam": {
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1e-08,
+    "weight_decay": 0.0
+  },
+  "wm": {
+    "epochs": 50,
+    "global_batch": 8,
+    "lr": 5e-05,
+    "warmup_epochs": 5,
+    "num_candidates": 4,
+    "epsilon_m": 0.01
+  },
+  "pseudo": {
+    "batch_size": 1
+  },
+  "il": {
+    "epochs": 40,
+    "global_batch": 24,
+    "lr": 0.0001,
+    "warmup_epochs": 4
+  },
+  "rl": {
+    "epochs": 40,
+    "global_batch": 24,
+    "lr": 0.0001,
+    "warmup_epochs": 4,
+    "num_sample": 5,
+    "temperature": 1.0,
+    "beta": 0.01,
+    "clip_epsilon": 0.2
+  },
+  "provenance": {
+    "paper": "WM Adam/50 epochs/batch8/LR5e-5/warmup5; policy Adam/40 epochs/batch24/LR1e-4/warmup4; two codebooks64; max64frames",
+    "source": "Official LWM fusion, prediction_head, cro_proj and action/policy modules byte-identical. Single-image CroCo frontend replaced by frozen official VJEPA2.1 EMA, native576; existing policy feats_seq_len=576. Inherited self-written paper-based trainer, not released author training code.",
+    "provisional": "Global batch interpretation; Adam fine settings; constant LR after warmup; M4/epsilon0.01m; RL beta/clip/fixed IL reference; applying policy40/LR/warmup separately to RL because a separate RL budget is not disclosed",
+    "runtime_only": "micro_batch24 is a ceiling: each rank processes its full local share of global WM8 / policy24 without accumulation; no GPU IDs/count hardcoded; no GPU holders.",
+    "data_sampling": "StreamVLN adaptation, NOT disclosed author recipe: physical trajectory dedup; one anchor per at-most-63-anchor bin per epoch; local no-replacement cycles; IL fixed epoch0 pairs; original model/loss/batch/LR/epochs unchanged."
+  },
+  "sampling": {
+    "strategy": "physical_stratified_cycle_v1",
+    "anchor_bin_size": 63
+  },
+  "vision": {
+    "kind": "vjepa21_vitb384_native",
+    "source_root": "/path/to/source_root/repo",
+    "checkpoint": "/path/to/checkpoint/vjepa2_1_vitb_dist_vitG_384.pt",
+    "checkpoint_sha256": "848a77c33cc9e6649ed2119c9bea1e2c569bcdab9539ff3e7c02ccc2959ddf4d",
+    "checkpoint_bytes": 1664223428,
+    "source_commit": "204698b45b3712590f06245fbfba32d3be539812",
+    "source_tree": "dd6cfc1e792158510b983d827cb2e84f47fd5706",
+    "preprocessing": "official_vjepa384_shortside_centercrop_imagenet",
+    "image_shape": [
+      3,
+      1,
+      384,
+      384
+    ],
+    "grid_shape": [
+      576,
+      768
+    ],
+    "frozen": true
+  }
+}

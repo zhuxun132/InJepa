@@ -1,0 +1,21 @@
+recon:
+  mu: [0.01367, 0, 0]
+  var_scale: [0.00117, 0.00625, 0.1]
+
+scand:
+  mu: [0.015, 0, 0]
+  var_scale: [0.005, 0.003, 0.1]
+
+sacson:
+  mu: [0.005, 0, 0]
+  var_scale: [0.01, 0.01, 0.1]
+
+# Fixed planner-initialization prior for the external RAE-stream adapter.  The
+# scale is derived from the declared primitive codebook (one normalized
+# waypoint unit = 1/64).  The unchanged planner multiplies its third sampled
+# terminal-bias component by pi, so one 15-degree turn is (pi/12)/pi = 1/12;
+# these values are not tuned from validation metrics and are not model/training
+# hyperparameters.
+rae_stream:
+  mu: [0.0, 0.0, 0.0]
+  var_scale: [0.015625, 0.015625, 0.08333333333333333]

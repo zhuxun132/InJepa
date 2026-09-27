@@ -1,0 +1,17 @@
+{
+  "canonical_manifest": "/path/to/canonical_manifest/J2J_CANONICAL_SOURCE_MANIFEST_V1.json",
+  "expected_manifest_sha256": "975aa37b6dfa5f7d5fd6680a5ceb29823b4a25a1dbe376c3fe874617943c7104",
+  "u_cache_manifest": "/path/to/z32_cache_dir/raw_cache/manifest.json",
+  "z32_cache_dir": "/path/to/z32_cache_dir/raw_cache",
+  "expected_parent_manifest_sha256": "44f9357e3b4e03358329043ea6eee3782faa68e8da6cb323c9d98a3c5c3c99df",
+  "expected_identities": {
+    "checkpoint_sha256": "848a77c33cc9e6649ed2119c9bea1e2c569bcdab9539ff3e7c02ccc2959ddf4d",
+    "pool_sha256": "815079d56d54eea6ad8f1a2a5ace5bdc6384217bc8d10477ec3b1a9f67c8a22c",
+    "preprocess_sha256": "da5f73a48fb8f71dee05045b829f1a288a431c8d42a5e76d5614f34a0614e7a3",
+    "vjepa_source_commit": "204698b45b3712590f06245fbfba32d3be539812",
+    "whitening_sha256": null
+  },
+  "require_stage": "RAW32",
+  "require_production_eligible": true,
+  "output_dir": "/path/to/generated/vjepa/source_catalog"
+}

@@ -1,0 +1,4 @@
+# Data census only. The trainable model is configured in train_vjepa.json.
+horizon:
+  max_steps: 4
+  prefixes: [1, 2, 3, 4]
