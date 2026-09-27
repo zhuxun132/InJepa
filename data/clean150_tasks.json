@@ -1,0 +1,4366 @@
+{
+  "schema": "injepa_clean150_poses_v1",
+  "description": "Existing evaluated task poses, in original task order; no resampling.",
+  "position_units": "metres",
+  "coordinate_frame": "native Habitat scene world coordinates",
+  "quaternion_order": [
+    "x",
+    "y",
+    "z",
+    "w"
+  ],
+  "goal_rotation_role": "orientation used to render the goal image; not an arrival orientation constraint",
+  "source_compressed_ledger_sha256": "8b6de5b39aca01419e1fb62e8ca82e15b799799e68b4bd1575462f23ef001e8a",
+  "tasks": [
+    {
+      "task_index": 0,
+      "episode_id": "2azQ1b91cZZ_000",
+      "scene_id": "2azQ1b91cZZ",
+      "start_position": [
+        18.343557357788086,
+        0.12711000442504883,
+        7.543763637542725
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        0.8694137538917557,
+        0.0,
+        0.49408473417405413
+      ],
+      "goal_position": [
+        12.5365571975708,
+        0.12711000442504883,
+        10.668973922729492
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        0.8488886355254492,
+        0.0,
+        0.528571740141053
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 6.59983491897583
+    },
+    {
+      "task_index": 1,
+      "episode_id": "2azQ1b91cZZ_001",
+      "scene_id": "2azQ1b91cZZ",
+      "start_position": [
+        13.355840682983398,
+        0.12711000442504883,
+        0.6590124368667603
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        0.7352018529196072,
+        0.0,
+        0.6778482392568239
+      ],
+      "goal_position": [
+        7.1208343505859375,
+        0.12711000442504883,
+        1.1659870147705078
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        0.7352018529196072,
+        0.0,
+        0.6778482392568239
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 6.255583763122559
+    },
+    {
+      "task_index": 2,
+      "episode_id": "2azQ1b91cZZ_003",
+      "scene_id": "2azQ1b91cZZ",
+      "start_position": [
+        -5.3245086669921875,
+        0.12711000442504883,
+        -0.41700172424316406
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        -0.6718890839505591,
+        0.0,
+        0.7406517797643359
+      ],
+      "goal_position": [
+        1.9397603273391724,
+        0.12711000442504883,
+        -0.9477997422218323
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        -0.6770506250973768,
+        0.0,
+        0.7359364449837033
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 7.285555362701416
+    },
+    {
+      "task_index": 3,
+      "episode_id": "2azQ1b91cZZ_004",
+      "scene_id": "2azQ1b91cZZ",
+      "start_position": [
+        -0.10180770605802536,
+        0.12711000442504883,
+        0.9431085586547852
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        -0.9724473384000857,
+        0.0,
+        0.23312265878414587
+      ],
+      "goal_position": [
+        0.7541624307632446,
+        0.12711000442504883,
+        8.608840942382812
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        -0.9999580110629975,
+        0.0,
+        0.009163848041845835
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 7.791620254516602
+    },
+    {
+      "task_index": 4,
+      "episode_id": "2azQ1b91cZZ_005",
+      "scene_id": "2azQ1b91cZZ",
+      "start_position": [
+        14.21553897857666,
+        0.12711000442504883,
+        0.99566251039505
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        -0.38686202449517343,
+        0.0,
+        0.9221376112075116
+      ],
+      "goal_position": [
+        19.897966384887695,
+        0.12711000442504883,
+        -4.584784984588623
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        -0.3868620244951735,
+        0.0,
+        0.9221376112075116
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 7.964381694793701
+    },
+    {
+      "task_index": 5,
+      "episode_id": "2azQ1b91cZZ_006",
+      "scene_id": "2azQ1b91cZZ",
+      "start_position": [
+        10.985858917236328,
+        0.12711000442504883,
+        6.906316757202148
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        -0.7352719646501193,
+        0.0,
+        0.6777721873900947
+      ],
+      "goal_position": [
+        17.229095458984375,
+        0.12711000442504883,
+        4.850358009338379
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        -0.38166083582398547,
+        0.0,
+        0.9243024431419279
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 7.089076995849609
+    },
+    {
+      "task_index": 6,
+      "episode_id": "2azQ1b91cZZ_007",
+      "scene_id": "2azQ1b91cZZ",
+      "start_position": [
+        21.328563690185547,
+        0.12711000442504883,
+        7.575954437255859
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        0.7278973441661983,
+        0.0,
+        0.6856861208714925
+      ],
+      "goal_position": [
+        14.043883323669434,
+        0.12711000442504883,
+        9.877485275268555
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        0.8183014296362977,
+        0.0,
+        0.5747893268452289
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 7.677615165710449
+    },
+    {
+      "task_index": 7,
+      "episode_id": "2azQ1b91cZZ_008",
+      "scene_id": "2azQ1b91cZZ",
+      "start_position": [
+        12.862977981567383,
+        0.12711000442504883,
+        2.319485902786255
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        -0.8743581654106869,
+        0.0,
+        0.4852811541566991
+      ],
+      "goal_position": [
+        19.723819732666016,
+        0.12711000442504883,
+        6.511828422546387
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        -0.8523796729985404,
+        0.0,
+        0.522923410318281
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 8.057101249694824
+    },
+    {
+      "task_index": 8,
+      "episode_id": "2azQ1b91cZZ_009",
+      "scene_id": "2azQ1b91cZZ",
+      "start_position": [
+        21.16691017150879,
+        0.12711000442504883,
+        -1.5363783836364746
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        0.8269811965062513,
+        0.0,
+        0.5622295799983215
+      ],
+      "goal_position": [
+        13.501983642578125,
+        0.12711000442504883,
+        1.758100986480713
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        0.8501202506104626,
+        0.0,
+        0.5265886055565618
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 8.3477144241333
+    },
+    {
+      "task_index": 9,
+      "episode_id": "2azQ1b91cZZ_010",
+      "scene_id": "2azQ1b91cZZ",
+      "start_position": [
+        -0.3825024962425232,
+        0.12711000442504883,
+        1.5429527759552002
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        -0.6694789192655876,
+        0.0,
+        0.7428310552601991
+      ],
+      "goal_position": [
+        7.798623085021973,
+        0.12711000442504883,
+        0.6908364295959473
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        -0.6694789192655876,
+        0.0,
+        0.7428310552601991
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 8.225382804870605
+    },
+    {
+      "task_index": 10,
+      "episode_id": "2azQ1b91cZZ_012",
+      "scene_id": "2azQ1b91cZZ",
+      "start_position": [
+        20.259763717651367,
+        0.12711000442504883,
+        4.755426406860352
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        0.7335941789950324,
+        0.0,
+        0.6795878019392375
+      ],
+      "goal_position": [
+        12.614555358886719,
+        0.12711000442504883,
+        7.411931991577148
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        0.7830798169681864,
+        0.0,
+        0.6219212170822537
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 8.194395065307617
+    },
+    {
+      "task_index": 11,
+      "episode_id": "2azQ1b91cZZ_013",
+      "scene_id": "2azQ1b91cZZ",
+      "start_position": [
+        17.181644439697266,
+        0.12711000442504883,
+        8.519627571105957
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        0.17196264630006203,
+        0.0,
+        0.985103470848357
+      ],
+      "goal_position": [
+        12.111162185668945,
+        0.12711000442504883,
+        3.189098358154297
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        0.6459312888326049,
+        0.0,
+        0.76339555284731
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 8.446094512939453
+    },
+    {
+      "task_index": 12,
+      "episode_id": "2azQ1b91cZZ_015",
+      "scene_id": "2azQ1b91cZZ",
+      "start_position": [
+        18.17389488220215,
+        0.12711000442504883,
+        10.650761604309082
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        0.43221733302668724,
+        0.0,
+        0.9017694700040014
+      ],
+      "goal_position": [
+        11.670989036560059,
+        0.12711000442504883,
+        4.627169609069824
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        0.033956704915641844,
+        0.0,
+        0.9994233048069632
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 9.2492094039917
+    },
+    {
+      "task_index": 13,
+      "episode_id": "2azQ1b91cZZ_016",
+      "scene_id": "2azQ1b91cZZ",
+      "start_position": [
+        18.259572982788086,
+        0.12711000442504883,
+        10.52997875213623
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        0.45399002881755735,
+        0.0,
+        0.8910067641349495
+      ],
+      "goal_position": [
+        11.992044448852539,
+        0.12711000442504883,
+        4.462721824645996
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        -0.1068725477970284,
+        0.0,
+        0.9942727284439475
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 9.432173728942871
+    },
+    {
+      "task_index": 14,
+      "episode_id": "2azQ1b91cZZ_017",
+      "scene_id": "2azQ1b91cZZ",
+      "start_position": [
+        16.367935180664062,
+        0.12711000442504883,
+        10.15865707397461
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        0.06845957839536479,
+        0.0,
+        0.9976538909491252
+      ],
+      "goal_position": [
+        12.821090698242188,
+        0.12711000442504883,
+        1.7787868976593018
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        0.33800642388631613,
+        0.0,
+        0.9411438027270774
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 9.81909465789795
+    },
+    {
+      "task_index": 15,
+      "episode_id": "8194nk5LbLH_000",
+      "scene_id": "8194nk5LbLH",
+      "start_position": [
+        -2.6659131050109863,
+        0.0985960066318512,
+        5.780462741851807
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        -0.6418422151321834,
+        0.0,
+        0.7668367302589332
+      ],
+      "goal_position": [
+        2.204538106918335,
+        0.0985960066318512,
+        4.466516971588135
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        -0.4506537208116831,
+        0.0,
+        0.892698842789989
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 5.154681205749512
+    },
+    {
+      "task_index": 16,
+      "episode_id": "8194nk5LbLH_001",
+      "scene_id": "8194nk5LbLH",
+      "start_position": [
+        -3.0237419605255127,
+        0.0985960066318512,
+        0.5956593155860901
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        -0.9825285393928315,
+        0.0,
+        0.18611198048107824
+      ],
+      "goal_position": [
+        0.27026358246803284,
+        0.0985960066318512,
+        4.977794647216797
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        -0.7672590466235023,
+        0.0,
+        0.641337317933702
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 6.331595420837402
+    },
+    {
+      "task_index": 17,
+      "episode_id": "8194nk5LbLH_002",
+      "scene_id": "8194nk5LbLH",
+      "start_position": [
+        2.0076663494110107,
+        0.0985960066318512,
+        -2.5659139156341553
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        0.8153478574006103,
+        0.0,
+        0.5789713908581614
+      ],
+      "goal_position": [
+        -3.759626865386963,
+        0.0985960066318512,
+        -0.4065277874469757
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        0.8349175592211858,
+        0.0,
+        0.5503750260541785
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 6.161533355712891
+    },
+    {
+      "task_index": 18,
+      "episode_id": "8194nk5LbLH_004",
+      "scene_id": "8194nk5LbLH",
+      "start_position": [
+        2.52665376663208,
+        0.0985960066318512,
+        2.3769259452819824
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        0.1937796389552021,
+        0.0,
+        0.9810450812915742
+      ],
+      "goal_position": [
+        -2.194018602371216,
+        0.0985960066318512,
+        -2.2806434631347656
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        0.5275090543618202,
+        0.0,
+        0.8495494085492016
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 7.079352378845215
+    },
+    {
+      "task_index": 19,
+      "episode_id": "8194nk5LbLH_006",
+      "scene_id": "8194nk5LbLH",
+      "start_position": [
+        2.400665760040283,
+        0.0985960066318512,
+        4.1070966720581055
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        0.034482252696373776,
+        0.0,
+        0.99940531029657
+      ],
+      "goal_position": [
+        1.6823304891586304,
+        0.0985960066318512,
+        -2.862509250640869
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        0.1128357421878369,
+        0.0,
+        0.9936136549408527
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 7.02114725112915
+    },
+    {
+      "task_index": 20,
+      "episode_id": "8194nk5LbLH_007",
+      "scene_id": "8194nk5LbLH",
+      "start_position": [
+        -3.717158794403076,
+        0.0985960066318512,
+        -1.8050761222839355
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        -0.7606866304650117,
+        0.0,
+        0.649119288137232
+      ],
+      "goal_position": [
+        2.609124183654785,
+        0.0985960066318512,
+        1.789129376411438
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        -0.9682949137785289,
+        0.0,
+        0.24980984758538083
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 7.90091609954834
+    },
+    {
+      "task_index": 21,
+      "episode_id": "8194nk5LbLH_008",
+      "scene_id": "8194nk5LbLH",
+      "start_position": [
+        4.211102485656738,
+        0.0985960066318512,
+        -2.8113789558410645
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        0.7887785136834412,
+        0.0,
+        0.6146775222434455
+      ],
+      "goal_position": [
+        -3.6509199142456055,
+        0.0985960066318512,
+        -0.8302993178367615
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        0.7887785136834412,
+        0.0,
+        0.6146775222434455
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 8.107778549194336
+    },
+    {
+      "task_index": 22,
+      "episode_id": "8194nk5LbLH_009",
+      "scene_id": "8194nk5LbLH",
+      "start_position": [
+        -6.404130935668945,
+        0.0985960066318512,
+        2.700273036956787
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        -0.680153053950598,
+        0.0,
+        0.7330701352542436
+      ],
+      "goal_position": [
+        -0.04930907487869263,
+        0.0985960066318512,
+        -2.681915521621704
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        -0.435183443413779,
+        0.0,
+        0.9003418076367031
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 8.62758731842041
+    },
+    {
+      "task_index": 23,
+      "episode_id": "8194nk5LbLH_012",
+      "scene_id": "8194nk5LbLH",
+      "start_position": [
+        1.183667540550232,
+        0.0985960066318512,
+        5.360970497131348
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        -0.3608794071396229,
+        0.0,
+        0.9326124883908398
+      ],
+      "goal_position": [
+        2.327314853668213,
+        0.0985960066318512,
+        -2.983715534210205
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        -0.03266096810753221,
+        0.0,
+        0.9994664882637531
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 8.653507232666016
+    },
+    {
+      "task_index": 24,
+      "episode_id": "8194nk5LbLH_013",
+      "scene_id": "8194nk5LbLH",
+      "start_position": [
+        3.9327688217163086,
+        0.0985960066318512,
+        4.293986797332764
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        0.8023953773775198,
+        0.0,
+        0.5967928102475664
+      ],
+      "goal_position": [
+        -3.9169020652770996,
+        0.0985960066318512,
+        2.5732617378234863
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        0.38870616054836815,
+        0.0,
+        0.9213617751739792
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 8.814373016357422
+    },
+    {
+      "task_index": 25,
+      "episode_id": "8194nk5LbLH_014",
+      "scene_id": "8194nk5LbLH",
+      "start_position": [
+        -2.04632830619812,
+        0.0985960066318512,
+        -1.9433741569519043
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        -0.9999472907924539,
+        0.0,
+        0.010267211735983005
+      ],
+      "goal_position": [
+        0.35774633288383484,
+        0.0985960066318512,
+        4.988414287567139
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        -0.7665101009915561,
+        0.0,
+        0.6422322516643916
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 8.786850929260254
+    },
+    {
+      "task_index": 26,
+      "episode_id": "8194nk5LbLH_015",
+      "scene_id": "8194nk5LbLH",
+      "start_position": [
+        2.5264322757720947,
+        0.0985960066318512,
+        4.256070137023926
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        0.11239254018013428,
+        0.0,
+        0.9936638852810626
+      ],
+      "goal_position": [
+        -3.2687630653381348,
+        0.0985960066318512,
+        -2.048168182373047
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        0.6113091234911969,
+        0.0,
+        0.791391910204056
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 9.800786018371582
+    },
+    {
+      "task_index": 27,
+      "episode_id": "8194nk5LbLH_016",
+      "scene_id": "8194nk5LbLH",
+      "start_position": [
+        4.050321578979492,
+        0.0985960066318512,
+        4.375094413757324
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        0.2506952568769443,
+        0.0,
+        0.9680660556901078
+      ],
+      "goal_position": [
+        -2.1431405544281006,
+        0.0985960066318512,
+        -1.8284435272216797
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        0.5973648670434317,
+        0.0,
+        0.8019695852226462
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 9.3285551071167
+    },
+    {
+      "task_index": 28,
+      "episode_id": "8194nk5LbLH_017",
+      "scene_id": "8194nk5LbLH",
+      "start_position": [
+        3.4549551010131836,
+        0.0985960066318512,
+        6.256687164306641
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        0.08635487464161384,
+        0.0,
+        0.9962644406108406
+      ],
+      "goal_position": [
+        1.9683626890182495,
+        0.0985960066318512,
+        -2.864230155944824
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        0.07263213082679741,
+        0.0,
+        0.9973587988139269
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 9.242120742797852
+    },
+    {
+      "task_index": 29,
+      "episode_id": "8194nk5LbLH_018",
+      "scene_id": "8194nk5LbLH",
+      "start_position": [
+        -4.355673789978027,
+        0.0985960066318512,
+        -3.0895800590515137
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        -0.9835567761478033,
+        0.0,
+        0.1805991918413252
+      ],
+      "goal_position": [
+        -0.8926247954368591,
+        0.0985960066318512,
+        5.518035411834717
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        -0.9212050138892351,
+        0.0,
+        0.38907752747406804
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 9.427639961242676
+    },
+    {
+      "task_index": 30,
+      "episode_id": "EU6Fwq7SyZv_000",
+      "scene_id": "EU6Fwq7SyZv",
+      "start_position": [
+        6.169254302978516,
+        0.018061161041259766,
+        9.050576210021973
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        0.47308718518181336,
+        0.0,
+        0.8810156157621434
+      ],
+      "goal_position": [
+        2.029576301574707,
+        0.018061161041259766,
+        6.011905193328857
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        0.3582947531752451,
+        0.0,
+        0.933608520659002
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 5.17525577545166
+    },
+    {
+      "task_index": 31,
+      "episode_id": "EU6Fwq7SyZv_001",
+      "scene_id": "EU6Fwq7SyZv",
+      "start_position": [
+        9.160219192504883,
+        0.16984371840953827,
+        2.257896900177002
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        0.711073084161005,
+        0.0,
+        0.7031181045754379
+      ],
+      "goal_position": [
+        3.02939772605896,
+        0.018061161041259766,
+        2.4931559562683105
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        0.7674920999098774,
+        0.0,
+        0.641058403404812
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 6.153501033782959
+    },
+    {
+      "task_index": 32,
+      "episode_id": "EU6Fwq7SyZv_002",
+      "scene_id": "EU6Fwq7SyZv",
+      "start_position": [
+        7.63587760925293,
+        0.09778648614883423,
+        7.920204162597656
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        0.6774272437987098,
+        0.0,
+        0.7355897833434635
+      ],
+      "goal_position": [
+        3.7275044918060303,
+        0.17918092012405396,
+        4.502224445343018
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        -0.04896160869091492,
+        0.0,
+        0.9988006612304567
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 6.715454578399658
+    },
+    {
+      "task_index": 33,
+      "episode_id": "EU6Fwq7SyZv_003",
+      "scene_id": "EU6Fwq7SyZv",
+      "start_position": [
+        9.204874038696289,
+        0.018061161041259766,
+        8.069570541381836
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        0.7528893504373496,
+        0.0,
+        0.6581471157712581
+      ],
+      "goal_position": [
+        1.9022821187973022,
+        0.08692176640033722,
+        9.054657936096191
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        0.7528893504373496,
+        0.0,
+        0.6581471157712581
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 7.369056224822998
+    },
+    {
+      "task_index": 34,
+      "episode_id": "EU6Fwq7SyZv_005",
+      "scene_id": "EU6Fwq7SyZv",
+      "start_position": [
+        4.568954944610596,
+        0.018061161041259766,
+        10.066574096679688
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        0.15718779324784282,
+        0.0,
+        0.9875687305974574
+      ],
+      "goal_position": [
+        3.231344699859619,
+        0.018061161041259766,
+        2.6546220779418945
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        0.03471434436041236,
+        0.0,
+        0.9993972755094076
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 7.599056243896484
+    },
+    {
+      "task_index": 35,
+      "episode_id": "EU6Fwq7SyZv_008",
+      "scene_id": "EU6Fwq7SyZv",
+      "start_position": [
+        1.949319839477539,
+        0.08597985655069351,
+        1.2528748512268066
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        -0.990830830988587,
+        0.0,
+        0.13510834305277367
+      ],
+      "goal_position": [
+        3.9709134101867676,
+        0.018061161041259766,
+        9.130515098571777
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        -0.9952567825444392,
+        0.0,
+        0.09728276722673357
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 8.379570007324219
+    },
+    {
+      "task_index": 36,
+      "episode_id": "EU6Fwq7SyZv_009",
+      "scene_id": "EU6Fwq7SyZv",
+      "start_position": [
+        -0.14920714497566223,
+        0.018061161041259766,
+        6.486581802368164
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        -0.21727966830974643,
+        0.0,
+        0.9761093923015015
+      ],
+      "goal_position": [
+        5.358946323394775,
+        0.018061161041259766,
+        1.3591132164001465
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        -0.5863706133258666,
+        0.0,
+        0.8100429024612505
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 8.398210525512695
+    },
+    {
+      "task_index": 37,
+      "episode_id": "EU6Fwq7SyZv_010",
+      "scene_id": "EU6Fwq7SyZv",
+      "start_position": [
+        7.694983959197998,
+        3.716489791870117,
+        9.162951469421387
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        -0.2285359908147927,
+        0.0,
+        0.9735354646351108
+      ],
+      "goal_position": [
+        11.344205856323242,
+        3.6180613040924072,
+        1.8571386337280273
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        -0.23314401699848658,
+        0.0,
+        0.9724422179943698
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 8.167325019836426
+    },
+    {
+      "task_index": 38,
+      "episode_id": "EU6Fwq7SyZv_011",
+      "scene_id": "EU6Fwq7SyZv",
+      "start_position": [
+        7.057449817657471,
+        0.018061161041259766,
+        8.507438659667969
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        -0.2496012439574471,
+        0.0,
+        0.9683487073440512
+      ],
+      "goal_position": [
+        7.830517292022705,
+        0.018061161041259766,
+        0.8631184101104736
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        0.05181483426417138,
+        0.0,
+        0.9986567092600822
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 8.055789947509766
+    },
+    {
+      "task_index": 39,
+      "episode_id": "EU6Fwq7SyZv_012",
+      "scene_id": "EU6Fwq7SyZv",
+      "start_position": [
+        -0.6276431679725647,
+        0.018061161041259766,
+        6.360530853271484
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        -0.8072917833841721,
+        0.0,
+        0.590152502731627
+      ],
+      "goal_position": [
+        7.568209648132324,
+        0.018061161041259766,
+        9.096086502075195
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        -0.8124503995155385,
+        0.0,
+        0.5830303151012319
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 8.640551567077637
+    },
+    {
+      "task_index": 40,
+      "episode_id": "EU6Fwq7SyZv_014",
+      "scene_id": "EU6Fwq7SyZv",
+      "start_position": [
+        0.017423421144485474,
+        0.018061161041259766,
+        0.6092635989189148
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        -0.7440153601326782,
+        0.0,
+        0.6681625130809428
+      ],
+      "goal_position": [
+        9.186440467834473,
+        0.06632533669471741,
+        1.597111463546753
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        -0.7440153601326782,
+        0.0,
+        0.6681625130809428
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 9.222204208374023
+    },
+    {
+      "task_index": 41,
+      "episode_id": "EU6Fwq7SyZv_015",
+      "scene_id": "EU6Fwq7SyZv",
+      "start_position": [
+        0.11654508113861084,
+        0.018061161041259766,
+        6.33302116394043
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        -0.788706299280712,
+        0.0,
+        0.6147701793962715
+      ],
+      "goal_position": [
+        9.258304595947266,
+        0.018061161041259766,
+        8.541838645935059
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        -0.7823206773767033,
+        0.0,
+        0.6228758766791793
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 9.405317306518555
+    },
+    {
+      "task_index": 42,
+      "episode_id": "EU6Fwq7SyZv_016",
+      "scene_id": "EU6Fwq7SyZv",
+      "start_position": [
+        4.295468807220459,
+        0.018061161041259766,
+        9.53599739074707
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        0.14022469394705397,
+        0.0,
+        0.9901197075139223
+      ],
+      "goal_position": [
+        6.062655448913574,
+        0.018061161041259766,
+        1.5714110136032104
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        -0.5872109931548948,
+        0.0,
+        0.8094339068250367
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 9.767050743103027
+    },
+    {
+      "task_index": 43,
+      "episode_id": "EU6Fwq7SyZv_017",
+      "scene_id": "EU6Fwq7SyZv",
+      "start_position": [
+        3.580585241317749,
+        0.018061161041259766,
+        1.0275917053222656
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        0.9999871656595143,
+        0.0,
+        0.005066410588488019
+      ],
+      "goal_position": [
+        6.003975868225098,
+        0.018061161041259766,
+        8.845706939697266
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        -0.8978925377268637,
+        0.0,
+        0.44021470976605553
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 9.025731086730957
+    },
+    {
+      "task_index": 44,
+      "episode_id": "QUCTc6BB5sX_001",
+      "scene_id": "QUCTc6BB5sX",
+      "start_position": [
+        -8.957122802734375,
+        -2.989910364151001,
+        -21.773365020751953
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        -0.9264202120601066,
+        0.0,
+        0.37649115618631357
+      ],
+      "goal_position": [
+        -4.505866527557373,
+        -3.136305570602417,
+        -17.201311111450195
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        -0.9264202120601066,
+        0.0,
+        0.3764911561863134
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 6.382694721221924
+    },
+    {
+      "task_index": 45,
+      "episode_id": "QUCTc6BB5sX_003",
+      "scene_id": "QUCTc6BB5sX",
+      "start_position": [
+        -8.002582550048828,
+        -3.0443172454833984,
+        -20.438480377197266
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        -0.6846461795738785,
+        0.0,
+        0.7288755784047731
+      ],
+      "goal_position": [
+        -0.35043221712112427,
+        -3.245194911956787,
+        -18.743803024291992
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        -0.8149933594884116,
+        0.0,
+        0.5794702960375042
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 7.969888210296631
+    },
+    {
+      "task_index": 46,
+      "episode_id": "QUCTc6BB5sX_004",
+      "scene_id": "QUCTc6BB5sX",
+      "start_position": [
+        -2.264249563217163,
+        0.15480518341064453,
+        7.057140827178955
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        0.6715374659438531,
+        0.0,
+        0.7409706011939396
+      ],
+      "goal_position": [
+        -9.32331371307373,
+        0.15480518341064453,
+        7.095823287963867
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        0.7547189858492205,
+        0.0,
+        0.6560482088983431
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 7.086700439453125
+    },
+    {
+      "task_index": 47,
+      "episode_id": "QUCTc6BB5sX_006",
+      "scene_id": "QUCTc6BB5sX",
+      "start_position": [
+        0.676791787147522,
+        -3.245194911956787,
+        -16.352706909179688
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        0.561175942577589,
+        0.0,
+        0.8276965394830128
+      ],
+      "goal_position": [
+        -6.528882026672363,
+        -3.0674779415130615,
+        -19.223934173583984
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        0.561175942577589,
+        0.0,
+        0.8276965394830128
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 7.758689880371094
+    },
+    {
+      "task_index": 48,
+      "episode_id": "QUCTc6BB5sX_007",
+      "scene_id": "QUCTc6BB5sX",
+      "start_position": [
+        -8.588916778564453,
+        -0.01529686525464058,
+        -15.016059875488281
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        0.3040436808376989,
+        0.0,
+        0.952658091942048
+      ],
+      "goal_position": [
+        -10.107637405395508,
+        0.15480518341064453,
+        -21.847293853759766
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        -0.04288061389841725,
+        0.0,
+        0.9990802034630127
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 7.374103546142578
+    },
+    {
+      "task_index": 49,
+      "episode_id": "QUCTc6BB5sX_008",
+      "scene_id": "QUCTc6BB5sX",
+      "start_position": [
+        -7.518978118896484,
+        0.06940770149230957,
+        -11.358278274536133
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        -0.3018421096375345,
+        0.0,
+        0.9533579290327231
+      ],
+      "goal_position": [
+        -3.2273597717285156,
+        0.15480518341064453,
+        -17.200355529785156
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        -0.6192901532604835,
+        0.0,
+        0.785162216407926
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 8.293842315673828
+    },
+    {
+      "task_index": 50,
+      "episode_id": "QUCTc6BB5sX_009",
+      "scene_id": "QUCTc6BB5sX",
+      "start_position": [
+        -6.500650405883789,
+        0.15480518341064453,
+        -23.265470504760742
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        -0.9998792764145115,
+        0.0,
+        0.01553810145394158
+      ],
+      "goal_position": [
+        -6.188739776611328,
+        0.15480518341064453,
+        -15.045923233032227
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        -0.9996505424420972,
+        0.0,
+        0.02643469302301023
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 8.225884437561035
+    },
+    {
+      "task_index": 51,
+      "episode_id": "QUCTc6BB5sX_011",
+      "scene_id": "QUCTc6BB5sX",
+      "start_position": [
+        -7.817224502563477,
+        -3.221459150314331,
+        -14.618853569030762
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        -0.558473387448837,
+        0.0,
+        0.8295224382205831
+      ],
+      "goal_position": [
+        -0.12571778893470764,
+        -3.245194911956787,
+        -17.741960525512695
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        -0.5584733874488363,
+        0.0,
+        0.8295224382205836
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 8.301424026489258
+    },
+    {
+      "task_index": 52,
+      "episode_id": "QUCTc6BB5sX_012",
+      "scene_id": "QUCTc6BB5sX",
+      "start_position": [
+        -5.287723541259766,
+        -2.9226176738739014,
+        -23.886646270751953
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        0.9995389909331845,
+        0.0,
+        0.03036125169144411
+      ],
+      "goal_position": [
+        -5.823392868041992,
+        -3.1862452030181885,
+        -15.42068862915039
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        0.9994671014850208,
+        0.0,
+        0.03264219736983279
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 8.487005233764648
+    },
+    {
+      "task_index": 53,
+      "episode_id": "QUCTc6BB5sX_014",
+      "scene_id": "QUCTc6BB5sX",
+      "start_position": [
+        -2.643442153930664,
+        0.15480518341064453,
+        -11.808417320251465
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        0.6693864072875017,
+        0.0,
+        0.7429144215444542
+      ],
+      "goal_position": [
+        -9.010631561279297,
+        0.09191213548183441,
+        -16.734045028686523
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        0.14167113689330552,
+        0.0,
+        0.9899137785541517
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 9.495750427246094
+    },
+    {
+      "task_index": 54,
+      "episode_id": "QUCTc6BB5sX_015",
+      "scene_id": "QUCTc6BB5sX",
+      "start_position": [
+        0.3604995906352997,
+        0.15480518341064453,
+        -4.1801958084106445
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        0.9999582388606545,
+        0.0,
+        0.009138956980877758
+      ],
+      "goal_position": [
+        0.19317825138568878,
+        0.15480518341064453,
+        4.97294807434082
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        0.9999582388606545,
+        0.0,
+        0.009138956980877758
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 9.15467357635498
+    },
+    {
+      "task_index": 55,
+      "episode_id": "QUCTc6BB5sX_016",
+      "scene_id": "QUCTc6BB5sX",
+      "start_position": [
+        2.499807596206665,
+        -3.245194911956787,
+        -15.204302787780762
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        0.711641013404375,
+        0.0,
+        0.7025432855282258
+      ],
+      "goal_position": [
+        -7.17106819152832,
+        -3.2037034034729004,
+        -15.07986831665039
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        0.711641013404375,
+        0.0,
+        0.7025432855282258
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 9.671765327453613
+    },
+    {
+      "task_index": 56,
+      "episode_id": "TbHJrupSAjP_000",
+      "scene_id": "TbHJrupSAjP",
+      "start_position": [
+        -2.828670024871826,
+        0.024399995803833008,
+        -6.054265022277832
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        -0.11794365172501546,
+        0.0,
+        0.9930202893283542
+      ],
+      "goal_position": [
+        -1.438668966293335,
+        0.024399995803833008,
+        -10.980021476745605
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        -0.217058382243701,
+        0.0,
+        0.9761586237378367
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 5.145717620849609
+    },
+    {
+      "task_index": 57,
+      "episode_id": "TbHJrupSAjP_001",
+      "scene_id": "TbHJrupSAjP",
+      "start_position": [
+        -2.295447587966919,
+        0.19610412418842316,
+        -0.799241840839386
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        -0.5656783510854185,
+        0.0,
+        0.8246259777094596
+      ],
+      "goal_position": [
+        3.3908803462982178,
+        0.024399995803833008,
+        -3.617377519607544
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        -0.5141044092431446,
+        0.0,
+        0.8577276120055581
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 6.369609832763672
+    },
+    {
+      "task_index": 58,
+      "episode_id": "TbHJrupSAjP_002",
+      "scene_id": "TbHJrupSAjP",
+      "start_position": [
+        -0.33249402046203613,
+        -2.5755999088287354,
+        -4.93095064163208
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        -0.78518614125311,
+        0.0,
+        0.6192598191260686
+      ],
+      "goal_position": [
+        6.14620304107666,
+        -2.5755999088287354,
+        -3.488057851791382
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        -0.7748746850191081,
+        0.0,
+        0.6321148807903023
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 6.63832950592041
+    },
+    {
+      "task_index": 59,
+      "episode_id": "TbHJrupSAjP_003",
+      "scene_id": "TbHJrupSAjP",
+      "start_position": [
+        -4.01205587387085,
+        0.030842125415802002,
+        -1.4516187906265259
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        -0.6899986089851533,
+        0.0,
+        0.7238106932054497
+      ],
+      "goal_position": [
+        1.5887161493301392,
+        0.024399995803833008,
+        -3.3316495418548584
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        -0.3850324179688216,
+        0.0,
+        0.922903048598867
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 6.301815032958984
+    },
+    {
+      "task_index": 60,
+      "episode_id": "TbHJrupSAjP_004",
+      "scene_id": "TbHJrupSAjP",
+      "start_position": [
+        -2.1102817058563232,
+        0.024399995803833008,
+        -8.403057098388672
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        -0.8330788363624194,
+        0.0,
+        0.5531542754106102
+      ],
+      "goal_position": [
+        5.182586669921875,
+        0.024399995803833008,
+        -9.1470947265625
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        -0.6296573018049312,
+        0.0,
+        0.7768730155461276
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 7.538405418395996
+    },
+    {
+      "task_index": 61,
+      "episode_id": "TbHJrupSAjP_005",
+      "scene_id": "TbHJrupSAjP",
+      "start_position": [
+        1.7742505073547363,
+        0.024399995803833008,
+        -3.1948273181915283
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        -0.02099341692287731,
+        0.0,
+        0.9997796139379429
+      ],
+      "goal_position": [
+        2.1086888313293457,
+        0.024399995803833008,
+        -11.154874801635742
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        -0.02099341692287731,
+        0.0,
+        0.9997796139379429
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 7.96707010269165
+    },
+    {
+      "task_index": 62,
+      "episode_id": "TbHJrupSAjP_006",
+      "scene_id": "TbHJrupSAjP",
+      "start_position": [
+        -1.8404109477996826,
+        -2.5755999088287354,
+        -11.434479713439941
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        -0.9051201815127287,
+        0.0,
+        0.42515580322790497
+      ],
+      "goal_position": [
+        0.013139098882675171,
+        -2.5755999088287354,
+        -4.0834455490112305
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        -0.9967802442319939,
+        0.0,
+        0.08018194752440674
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 7.817595958709717
+    },
+    {
+      "task_index": 63,
+      "episode_id": "TbHJrupSAjP_007",
+      "scene_id": "TbHJrupSAjP",
+      "start_position": [
+        5.687204360961914,
+        0.024399995803833008,
+        -9.103317260742188
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        0.768526798954204,
+        0.0,
+        0.6398175984522501
+      ],
+      "goal_position": [
+        -2.094799757003784,
+        0.024399995803833008,
+        -8.31274127960205
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        0.5974766681558279,
+        0.0,
+        0.8018862955615408
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 7.955948829650879
+    },
+    {
+      "task_index": 64,
+      "episode_id": "TbHJrupSAjP_009",
+      "scene_id": "TbHJrupSAjP",
+      "start_position": [
+        -1.8498122692108154,
+        0.024399995803833008,
+        -10.942876815795898
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        -0.7807164159992733,
+        0.0,
+        0.6248854917416866
+      ],
+      "goal_position": [
+        5.883940696716309,
+        0.024399995803833008,
+        -9.180030822753906
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        -0.666347859034884,
+        0.0,
+        0.7456410200355305
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 8.159331321716309
+    },
+    {
+      "task_index": 65,
+      "episode_id": "TbHJrupSAjP_010",
+      "scene_id": "TbHJrupSAjP",
+      "start_position": [
+        0.33413755893707275,
+        0.23794744908809662,
+        -12.974489212036133
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        -0.9994192323274531,
+        0.0,
+        0.034076356231327244
+      ],
+      "goal_position": [
+        2.7172839641571045,
+        0.024399995803833008,
+        -5.126016139984131
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        -0.9863304429630777,
+        0.0,
+        0.1647794200871544
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 8.26374340057373
+    },
+    {
+      "task_index": 66,
+      "episode_id": "TbHJrupSAjP_013",
+      "scene_id": "TbHJrupSAjP",
+      "start_position": [
+        5.477938652038574,
+        0.024399995803833008,
+        -8.945392608642578
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        0.7614871868918012,
+        0.0,
+        0.648179962818669
+      ],
+      "goal_position": [
+        -2.450652837753296,
+        0.024399995803833008,
+        -8.675701141357422
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        0.43317452655246375,
+        0.0,
+        0.9013100629339766
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 8.22728157043457
+    },
+    {
+      "task_index": 67,
+      "episode_id": "TbHJrupSAjP_014",
+      "scene_id": "TbHJrupSAjP",
+      "start_position": [
+        5.702908515930176,
+        0.024399995803833008,
+        -8.61091136932373
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        0.7396817302162081,
+        0.0,
+        0.6729568619045033
+      ],
+      "goal_position": [
+        -2.0567495822906494,
+        0.024399995803833008,
+        -8.825651168823242
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        0.2725871625599584,
+        0.0,
+        0.9621310923192904
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 8.301234245300293
+    },
+    {
+      "task_index": 68,
+      "episode_id": "TbHJrupSAjP_015",
+      "scene_id": "TbHJrupSAjP",
+      "start_position": [
+        4.560234069824219,
+        0.024399995803833008,
+        -3.855720043182373
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        0.8314416875397048,
+        0.0,
+        0.5556120231070668
+      ],
+      "goal_position": [
+        -3.2745532989501953,
+        0.024399995803833008,
+        -2.326490879058838
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        0.5142064080472881,
+        0.0,
+        0.8576664677618601
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 8.497879028320312
+    },
+    {
+      "task_index": 69,
+      "episode_id": "TbHJrupSAjP_017",
+      "scene_id": "TbHJrupSAjP",
+      "start_position": [
+        6.27254056930542,
+        3.6244001388549805,
+        -7.085101127624512
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        0.979080994904224,
+        0.0,
+        0.20347089575011718
+      ],
+      "goal_position": [
+        3.103334426879883,
+        3.479314088821411,
+        0.674790620803833
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        -0.9962009792605732,
+        0.0,
+        0.08708391883852662
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 9.010175704956055
+    },
+    {
+      "task_index": 70,
+      "episode_id": "TbHJrupSAjP_018",
+      "scene_id": "TbHJrupSAjP",
+      "start_position": [
+        6.782032012939453,
+        0.024399995803833008,
+        -8.490123748779297
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        0.6601107143035183,
+        0.0,
+        0.7511683199268315
+      ],
+      "goal_position": [
+        -2.2297070026397705,
+        0.024399995803833008,
+        -9.916546821594238
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        0.8932900533659076,
+        0.0,
+        0.4494806787366215
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 9.641854286193848
+    },
+    {
+      "task_index": 71,
+      "episode_id": "X7HyMhZNoso_000",
+      "scene_id": "X7HyMhZNoso",
+      "start_position": [
+        3.7269134521484375,
+        -1.3357408046722412,
+        25.98721694946289
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        0.4581786950208171,
+        0.0,
+        0.8888601034071791
+      ],
+      "goal_position": [
+        -0.4283629059791565,
+        -1.3357408046722412,
+        23.027584075927734
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        0.45817869502081704,
+        0.0,
+        0.8888601034071791
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 5.10154390335083
+    },
+    {
+      "task_index": 72,
+      "episode_id": "X7HyMhZNoso_001",
+      "scene_id": "X7HyMhZNoso",
+      "start_position": [
+        -2.8939855098724365,
+        -1.3728082180023193,
+        25.210384368896484
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        -0.8987783579744204,
+        0.0,
+        0.4384033111608587
+      ],
+      "goal_position": [
+        1.954872965812683,
+        -1.3357408046722412,
+        28.9981689453125
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        -0.8987783579744204,
+        0.0,
+        0.4384033111608587
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 6.15305757522583
+    },
+    {
+      "task_index": 73,
+      "episode_id": "X7HyMhZNoso_002",
+      "scene_id": "X7HyMhZNoso",
+      "start_position": [
+        -2.321500778198242,
+        -1.3878145217895508,
+        24.412452697753906
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        -0.740479586249148,
+        0.0,
+        0.6720788512877716
+      ],
+      "goal_position": [
+        3.9451260566711426,
+        -1.3357408046722412,
+        25.020780563354492
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        -0.740479586249148,
+        0.0,
+        0.6720788512877716
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 6.296299457550049
+    },
+    {
+      "task_index": 74,
+      "episode_id": "X7HyMhZNoso_004",
+      "scene_id": "X7HyMhZNoso",
+      "start_position": [
+        4.044727325439453,
+        -1.3357408046722412,
+        27.311065673828125
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        -0.11524589014956363,
+        0.0,
+        0.9933369945812119
+      ],
+      "goal_position": [
+        5.677014350891113,
+        -1.0315310955047607,
+        20.37118148803711
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        -0.11524589014956363,
+        0.0,
+        0.9933369945812119
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 7.135747909545898
+    },
+    {
+      "task_index": 75,
+      "episode_id": "X7HyMhZNoso_005",
+      "scene_id": "X7HyMhZNoso",
+      "start_position": [
+        3.511934280395508,
+        -1.3357408046722412,
+        27.648704528808594
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        0.585851080822151,
+        0.0,
+        0.8104187257828619
+      ],
+      "goal_position": [
+        -3.839390516281128,
+        -1.3357408046722412,
+        25.22122573852539
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        0.585851080822151,
+        0.0,
+        0.8104187257828619
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 7.741746425628662
+    },
+    {
+      "task_index": 76,
+      "episode_id": "X7HyMhZNoso_006",
+      "scene_id": "X7HyMhZNoso",
+      "start_position": [
+        -4.733156204223633,
+        -1.3357408046722412,
+        24.18132781982422
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        -0.8691123434358552,
+        0.0,
+        0.49461473339098583
+      ],
+      "goal_position": [
+        1.3910187482833862,
+        -1.3357408046722412,
+        27.819231033325195
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        -0.8691123434358551,
+        0.0,
+        0.49461473339098605
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 7.123191833496094
+    },
+    {
+      "task_index": 77,
+      "episode_id": "X7HyMhZNoso_007",
+      "scene_id": "X7HyMhZNoso",
+      "start_position": [
+        2.0265610218048096,
+        -1.3357408046722412,
+        23.878881454467773
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        0.6652896331242669,
+        0.0,
+        0.7465853628737831
+      ],
+      "goal_position": [
+        -5.250936985015869,
+        -1.3357408046722412,
+        23.03801727294922
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        0.6652896331242669,
+        0.0,
+        0.7465853628737831
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 7.325915336608887
+    },
+    {
+      "task_index": 78,
+      "episode_id": "X7HyMhZNoso_008",
+      "scene_id": "X7HyMhZNoso",
+      "start_position": [
+        -4.992534637451172,
+        -0.535740852355957,
+        17.536087036132812
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        -0.7513896204277063,
+        0.0,
+        0.6598588018004363
+      ],
+      "goal_position": [
+        1.3912259340286255,
+        -0.535740852355957,
+        19.79416275024414
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        -0.9799663613861043,
+        0.0,
+        0.19916307527169588
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 7.372588157653809
+    },
+    {
+      "task_index": 79,
+      "episode_id": "X7HyMhZNoso_009",
+      "scene_id": "X7HyMhZNoso",
+      "start_position": [
+        -2.7069880962371826,
+        -1.3357408046722412,
+        22.726926803588867
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        -0.8461201220564243,
+        0.0,
+        0.5329922504607564
+      ],
+      "goal_position": [
+        5.033119201660156,
+        -1.3072974681854248,
+        26.432756423950195
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        -0.8461201220564243,
+        0.0,
+        0.5329922504607564
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 8.581564903259277
+    },
+    {
+      "task_index": 80,
+      "episode_id": "X7HyMhZNoso_011",
+      "scene_id": "X7HyMhZNoso",
+      "start_position": [
+        4.423886775970459,
+        -1.3281450271606445,
+        25.759971618652344
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        0.7469788107869768,
+        0.0,
+        0.6648478444240261
+      ],
+      "goal_position": [
+        -3.6700549125671387,
+        -1.3607261180877686,
+        26.704875946044922
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        0.7469788107869768,
+        0.0,
+        0.6648478444240261
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 8.148975372314453
+    },
+    {
+      "task_index": 81,
+      "episode_id": "X7HyMhZNoso_013",
+      "scene_id": "X7HyMhZNoso",
+      "start_position": [
+        1.9470713138580322,
+        -0.535740852355957,
+        20.389366149902344
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        0.6821961492009841,
+        0.0,
+        0.7311692102484545
+      ],
+      "goal_position": [
+        -5.852001667022705,
+        -0.535740852355957,
+        18.439502716064453
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        0.3006978541532327,
+        0.0,
+        0.9537194558714011
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 8.578279495239258
+    },
+    {
+      "task_index": 82,
+      "episode_id": "X7HyMhZNoso_014",
+      "scene_id": "X7HyMhZNoso",
+      "start_position": [
+        -2.061567783355713,
+        -0.6199270486831665,
+        20.26280975341797
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        0.17910422964389477,
+        0.0,
+        0.9838301047049064
+      ],
+      "goal_position": [
+        -2.148909568786621,
+        -0.535740852355957,
+        12.202857971191406
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        -0.15431555838054953,
+        0.0,
+        0.9880216133474506
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 8.52613639831543
+    },
+    {
+      "task_index": 83,
+      "episode_id": "X7HyMhZNoso_015",
+      "scene_id": "X7HyMhZNoso",
+      "start_position": [
+        -4.755393028259277,
+        -1.3357408046722412,
+        23.690589904785156
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        -0.8707655616130998,
+        0.0,
+        0.49169842048619894
+      ],
+      "goal_position": [
+        3.3221726417541504,
+        -1.3357408046722412,
+        28.562414169311523
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        -0.8707655616130998,
+        0.0,
+        0.49169842048619894
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 9.433013916015625
+    },
+    {
+      "task_index": 84,
+      "episode_id": "X7HyMhZNoso_017",
+      "scene_id": "X7HyMhZNoso",
+      "start_position": [
+        -1.7895917892456055,
+        -0.4573986530303955,
+        9.086249351501465
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        0.9934945506696404,
+        0.0,
+        0.11387966363547605
+      ],
+      "goal_position": [
+        -2.1599690914154053,
+        -0.535740852355957,
+        17.768178939819336
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        -0.9199807406276481,
+        0.0,
+        0.3919635657484047
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 9.437204360961914
+    },
+    {
+      "task_index": 85,
+      "episode_id": "Z6MFQCViBuw_000",
+      "scene_id": "Z6MFQCViBuw",
+      "start_position": [
+        27.673450469970703,
+        0.00952601432800293,
+        -5.478511810302734
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        -0.14951873994526713,
+        0.0,
+        0.9887588919474655
+      ],
+      "goal_position": [
+        29.433935165405273,
+        0.039378564804792404,
+        -11.16639518737793
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        -0.149518739945267,
+        0.0,
+        0.9887588919474655
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 5.954176425933838
+    },
+    {
+      "task_index": 86,
+      "episode_id": "Z6MFQCViBuw_001",
+      "scene_id": "Z6MFQCViBuw",
+      "start_position": [
+        21.345592498779297,
+        0.00952601432800293,
+        4.453381538391113
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        -0.6860656677863239,
+        0.0,
+        0.7275396205602176
+      ],
+      "goal_position": [
+        27.904220581054688,
+        0.00952601432800293,
+        4.068201065063477
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        -0.6860656677863239,
+        0.0,
+        0.7275396205602176
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 6.569929122924805
+    },
+    {
+      "task_index": 87,
+      "episode_id": "Z6MFQCViBuw_003",
+      "scene_id": "Z6MFQCViBuw",
+      "start_position": [
+        3.895754337310791,
+        0.00952601432800293,
+        -12.607879638671875
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        0.9398760907340143,
+        0.0,
+        0.34151564249174116
+      ],
+      "goal_position": [
+        -0.16022931039333344,
+        0.00952601432800293,
+        -7.401467323303223
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        0.9951836133455975,
+        0.0,
+        0.09802844346617143
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 6.855103969573975
+    },
+    {
+      "task_index": 88,
+      "episode_id": "Z6MFQCViBuw_005",
+      "scene_id": "Z6MFQCViBuw",
+      "start_position": [
+        18.825733184814453,
+        0.208860382437706,
+        -0.26906073093414307
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        -0.9839864434114777,
+        0.0,
+        0.17824331455185327
+      ],
+      "goal_position": [
+        22.494186401367188,
+        0.00952601432800293,
+        6.311832904815674
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        -0.9635815409797512,
+        0.0,
+        0.26741468524201883
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 7.556188583374023
+    },
+    {
+      "task_index": 89,
+      "episode_id": "Z6MFQCViBuw_006",
+      "scene_id": "Z6MFQCViBuw",
+      "start_position": [
+        28.822280883789062,
+        0.00952601432800293,
+        -0.11633902788162231
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        -0.12028456907582268,
+        0.0,
+        0.9927394534530416
+      ],
+      "goal_position": [
+        30.165603637695312,
+        0.12450602650642395,
+        -7.409600257873535
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        0.11151329524471851,
+        0.0,
+        0.9937629420458706
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 7.569270610809326
+    },
+    {
+      "task_index": 90,
+      "episode_id": "Z6MFQCViBuw_007",
+      "scene_id": "Z6MFQCViBuw",
+      "start_position": [
+        9.064979553222656,
+        0.14054393768310547,
+        -5.85249137878418
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        -0.9631873171452059,
+        0.0,
+        0.2688311590768834
+      ],
+      "goal_position": [
+        14.286896705627441,
+        0.00952601432800293,
+        -1.9061670303344727
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        -0.636983095259152,
+        0.0,
+        0.7708777700479306
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 7.715856552124023
+    },
+    {
+      "task_index": 91,
+      "episode_id": "Z6MFQCViBuw_008",
+      "scene_id": "Z6MFQCViBuw",
+      "start_position": [
+        29.05167007446289,
+        0.00952601432800293,
+        -1.193713665008545
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        0.7037572230639781,
+        0.0,
+        0.7104405471151531
+      ],
+      "goal_position": [
+        20.45376205444336,
+        0.11782525479793549,
+        -1.2749807834625244
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        0.7037572230639781,
+        0.0,
+        0.7104405471151531
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 8.598974227905273
+    },
+    {
+      "task_index": 92,
+      "episode_id": "Z6MFQCViBuw_009",
+      "scene_id": "Z6MFQCViBuw",
+      "start_position": [
+        18.959972381591797,
+        0.23312591016292572,
+        0.20811383426189423
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        -0.9743190472448993,
+        0.0,
+        0.2251719213751833
+      ],
+      "goal_position": [
+        24.33648681640625,
+        0.00952601432800293,
+        6.093191623687744
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        -0.9240427775029706,
+        0.0,
+        0.38228908609139706
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 8.030946731567383
+    },
+    {
+      "task_index": 93,
+      "episode_id": "Z6MFQCViBuw_010",
+      "scene_id": "Z6MFQCViBuw",
+      "start_position": [
+        13.510738372802734,
+        0.20952606201171875,
+        -11.410469055175781
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        0.686286865941563,
+        0.0,
+        0.7273309684291651
+      ],
+      "goal_position": [
+        5.863054275512695,
+        0.16567644476890564,
+        -14.030294418334961
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        0.577913171249982,
+        0.0,
+        0.8160982578683703
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 8.23265266418457
+    },
+    {
+      "task_index": 94,
+      "episode_id": "Z6MFQCViBuw_011",
+      "scene_id": "Z6MFQCViBuw",
+      "start_position": [
+        0.8907132148742676,
+        0.00952601432800293,
+        -1.0483342409133911
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        0.2022206477021113,
+        0.0,
+        0.9793399867476762
+      ],
+      "goal_position": [
+        2.204453706741333,
+        0.00952601432800293,
+        -8.879478454589844
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        -0.10504342284825594,
+        0.0,
+        0.9944676361331838
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 8.313926696777344
+    },
+    {
+      "task_index": 95,
+      "episode_id": "Z6MFQCViBuw_012",
+      "scene_id": "Z6MFQCViBuw",
+      "start_position": [
+        28.491424560546875,
+        0.1594899296760559,
+        -13.435452461242676
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        -0.9913769288300407,
+        0.0,
+        0.13104115759377455
+      ],
+      "goal_position": [
+        30.476303100585938,
+        0.00952601432800293,
+        -4.996917247772217
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        -0.9999490387134994,
+        0.0,
+        0.010095542380103116
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 8.69955825805664
+    },
+    {
+      "task_index": 96,
+      "episode_id": "Z6MFQCViBuw_013",
+      "scene_id": "Z6MFQCViBuw",
+      "start_position": [
+        9.039329528808594,
+        0.15128092467784882,
+        -3.2443695068359375
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        -0.33703816532843534,
+        0.0,
+        0.941490985146455
+      ],
+      "goal_position": [
+        15.826264381408691,
+        0.00952601432800293,
+        -7.310155868530273
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        -0.6302968724508229,
+        0.0,
+        0.7763542056166831
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 8.380657196044922
+    },
+    {
+      "task_index": 97,
+      "episode_id": "Z6MFQCViBuw_014",
+      "scene_id": "Z6MFQCViBuw",
+      "start_position": [
+        8.643362045288086,
+        0.13343006372451782,
+        -7.821484088897705
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        -0.8187957190739619,
+        0.0,
+        0.574084985369025
+      ],
+      "goal_position": [
+        14.006261825561523,
+        0.00952601432800293,
+        -1.8929916620254517
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        -0.9859470876761418,
+        0.0,
+        0.16705789506316157
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 8.821739196777344
+    },
+    {
+      "task_index": 98,
+      "episode_id": "Z6MFQCViBuw_016",
+      "scene_id": "Z6MFQCViBuw",
+      "start_position": [
+        2.150928258895874,
+        0.00952601432800293,
+        -7.104461669921875
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        -0.015220019803998975,
+        0.0,
+        0.9998841687901483
+      ],
+      "goal_position": [
+        0.8175472021102905,
+        0.11467838287353516,
+        -16.1108455657959
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        0.4059737138980926,
+        0.0,
+        0.913884754016495
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 9.600320816040039
+    },
+    {
+      "task_index": 99,
+      "episode_id": "Z6MFQCViBuw_017",
+      "scene_id": "Z6MFQCViBuw",
+      "start_position": [
+        6.055366039276123,
+        0.12158221006393433,
+        -3.375248432159424
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        -0.8111525806347061,
+        0.0,
+        0.5848345842455426
+      ],
+      "goal_position": [
+        13.48852252960205,
+        0.00952601432800293,
+        -3.765929937362671
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        -0.2019835990839663,
+        0.0,
+        0.9793889042158317
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 9.177862167358398
+    },
+    {
+      "task_index": 100,
+      "episode_id": "oLBMNvg9in8_000",
+      "scene_id": "oLBMNvg9in8",
+      "start_position": [
+        -0.07745926082134247,
+        3.009996175765991,
+        1.947394609451294
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        0.05377686870923322,
+        0.0,
+        0.9985529772585078
+      ],
+      "goal_position": [
+        -0.6291064620018005,
+        3.009996175765991,
+        -3.159367084503174
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        0.0537768687092332,
+        0.0,
+        0.9985529772585078
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 5.136470794677734
+    },
+    {
+      "task_index": 101,
+      "episode_id": "oLBMNvg9in8_001",
+      "scene_id": "oLBMNvg9in8",
+      "start_position": [
+        4.964306354522705,
+        3.009996175765991,
+        -1.221186637878418
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        0.6412868489569469,
+        0.0,
+        0.7673012298666476
+      ],
+      "goal_position": [
+        -1.4357777833938599,
+        3.009996175765991,
+        -2.4614126682281494
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        0.6410396566278979,
+        0.0,
+        0.7675077580261888
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 6.520517349243164
+    },
+    {
+      "task_index": 102,
+      "episode_id": "oLBMNvg9in8_003",
+      "scene_id": "oLBMNvg9in8",
+      "start_position": [
+        -0.5116710662841797,
+        0.009996175765991211,
+        -4.17957067489624
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        -0.9060770612956258,
+        0.0,
+        0.42311270247285493
+      ],
+      "goal_position": [
+        4.830984115600586,
+        0.11696267127990723,
+        -2.579470157623291
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        -0.41862362286134175,
+        0.0,
+        0.9081598220481046
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 6.492250442504883
+    },
+    {
+      "task_index": 103,
+      "episode_id": "oLBMNvg9in8_004",
+      "scene_id": "oLBMNvg9in8",
+      "start_position": [
+        2.7839248180389404,
+        0.0346684604883194,
+        -4.0165510177612305
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        0.9478736088782207,
+        0.0,
+        0.3186465464934117
+      ],
+      "goal_position": [
+        1.2223424911499023,
+        0.009996175765991211,
+        3.171656608581543
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        0.9974672087101369,
+        0.0,
+        0.07112782541318155
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 7.4733171463012695
+    },
+    {
+      "task_index": 104,
+      "episode_id": "oLBMNvg9in8_005",
+      "scene_id": "oLBMNvg9in8",
+      "start_position": [
+        -2.5547783374786377,
+        3.009996175765991,
+        -1.8719438314437866
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        -0.6147817151256647,
+        0.0,
+        0.7886973074298821
+      ],
+      "goal_position": [
+        4.935572147369385,
+        3.009996175765991,
+        -3.5967941284179688
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        -0.6395549252772865,
+        0.0,
+        0.7687454048991541
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 7.689757347106934
+    },
+    {
+      "task_index": 105,
+      "episode_id": "oLBMNvg9in8_006",
+      "scene_id": "oLBMNvg9in8",
+      "start_position": [
+        -0.5813778638839722,
+        0.17366518080234528,
+        -2.4662747383117676
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        -0.8824001580119234,
+        0.0,
+        0.4704996930291588
+      ],
+      "goal_position": [
+        2.5674996376037598,
+        0.009996175765991211,
+        3.433515787124634
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        -0.9855403861826934,
+        0.0,
+        0.16944068933661596
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 7.114047050476074
+    },
+    {
+      "task_index": 106,
+      "episode_id": "oLBMNvg9in8_008",
+      "scene_id": "oLBMNvg9in8",
+      "start_position": [
+        1.6717278957366943,
+        0.09216046333312988,
+        -3.6014561653137207
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        0.9997126747089755,
+        0.0,
+        0.023970148648393207
+      ],
+      "goal_position": [
+        1.282594084739685,
+        0.009996175765991211,
+        4.508596897125244
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        0.9997126747089755,
+        0.0,
+        0.023970148648393207
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 8.119799613952637
+    },
+    {
+      "task_index": 107,
+      "episode_id": "oLBMNvg9in8_009",
+      "scene_id": "oLBMNvg9in8",
+      "start_position": [
+        2.553232192993164,
+        0.009996175765991211,
+        3.4277873039245605
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        0.2477275959596763,
+        0.0,
+        0.968829726112922
+      ],
+      "goal_position": [
+        -1.4948039054870605,
+        0.20999622344970703,
+        -3.546339988708496
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        0.26591102054930094,
+        0.0,
+        0.963997577357137
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 8.068767547607422
+    },
+    {
+      "task_index": 108,
+      "episode_id": "oLBMNvg9in8_010",
+      "scene_id": "oLBMNvg9in8",
+      "start_position": [
+        3.0609347820281982,
+        0.009996175765991211,
+        3.001340866088867
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        0.3329441418880925,
+        0.0,
+        0.9429465511800771
+      ],
+      "goal_position": [
+        -2.0421741008758545,
+        0.20999622344970703,
+        -3.8288087844848633
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        0.3236753864383436,
+        0.0,
+        0.9461681902357472
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 8.544760704040527
+    },
+    {
+      "task_index": 109,
+      "episode_id": "oLBMNvg9in8_012",
+      "scene_id": "oLBMNvg9in8",
+      "start_position": [
+        -0.6211134195327759,
+        0.180136039853096,
+        -2.5176730155944824
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        -0.8845459099584888,
+        0.0,
+        0.46645314145764855
+      ],
+      "goal_position": [
+        3.132500171661377,
+        0.009996175765991211,
+        4.796087265014648
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        -0.9837048242537902,
+        0.0,
+        0.17979104187867542
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 8.649935722351074
+    },
+    {
+      "task_index": 110,
+      "episode_id": "oLBMNvg9in8_013",
+      "scene_id": "oLBMNvg9in8",
+      "start_position": [
+        2.3216183185577393,
+        0.009996175765991211,
+        -4.024759769439697
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        0.9943530375366525,
+        0.0,
+        0.10612274375284793
+      ],
+      "goal_position": [
+        0.7369093894958496,
+        0.009996175765991211,
+        4.121730804443359
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        0.9929425244726668,
+        0.0,
+        0.11859655599488297
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 8.302488327026367
+    },
+    {
+      "task_index": 111,
+      "episode_id": "oLBMNvg9in8_014",
+      "scene_id": "oLBMNvg9in8",
+      "start_position": [
+        -0.7604386210441589,
+        0.12658512592315674,
+        -2.4519803524017334
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        -0.8708367437907379,
+        0.0,
+        0.49157234021448415
+      ],
+      "goal_position": [
+        3.472048282623291,
+        0.009996175765991211,
+        4.118642807006836
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        -0.9643782116439449,
+        0.0,
+        0.2645272479470245
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 8.263106346130371
+    },
+    {
+      "task_index": 112,
+      "episode_id": "oLBMNvg9in8_015",
+      "scene_id": "oLBMNvg9in8",
+      "start_position": [
+        -1.4998890161514282,
+        0.20999622344970703,
+        -3.1990959644317627
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        -0.889090711509527,
+        0.0,
+        0.457731041887573
+      ],
+      "goal_position": [
+        3.9341676235198975,
+        0.009996175765991211,
+        4.475637435913086
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        -0.9564276151771842,
+        0.0,
+        0.2919695479437606
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 9.844147682189941
+    },
+    {
+      "task_index": 113,
+      "episode_id": "oLBMNvg9in8_016",
+      "scene_id": "oLBMNvg9in8",
+      "start_position": [
+        -1.5775830745697021,
+        0.20999622344970703,
+        -3.375828981399536
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        -0.8954224674786764,
+        0.0,
+        0.4452174802659917
+      ],
+      "goal_position": [
+        3.0376062393188477,
+        0.009996175765991211,
+        4.126409530639648
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        -0.9790141115460406,
+        0.0,
+        0.20379246647930083
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 9.27084732055664
+    },
+    {
+      "task_index": 114,
+      "episode_id": "oLBMNvg9in8_017",
+      "scene_id": "oLBMNvg9in8",
+      "start_position": [
+        -1.6062278747558594,
+        0.20999622344970703,
+        -3.302783966064453
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        -0.8905652170472477,
+        0.0,
+        0.454855575084651
+      ],
+      "goal_position": [
+        3.240415573120117,
+        0.009996175765991211,
+        4.150629043579102
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        -0.9728996441864382,
+        0.0,
+        0.23122777156280794
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 9.358539581298828
+    },
+    {
+      "task_index": 115,
+      "episode_id": "pLe4wQe7qrG_001",
+      "scene_id": "pLe4wQe7qrG",
+      "start_position": [
+        0.02172347903251648,
+        0.07521799951791763,
+        -0.14435790479183197
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        -0.6766687309934893,
+        0.0,
+        0.7362875990369936
+      ],
+      "goal_position": [
+        6.151491641998291,
+        0.07521799951791763,
+        -0.5966442227363586
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        -0.6907322343428417,
+        0.0,
+        0.7231106280782669
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 6.147555351257324
+    },
+    {
+      "task_index": 116,
+      "episode_id": "pLe4wQe7qrG_006",
+      "scene_id": "pLe4wQe7qrG",
+      "start_position": [
+        -0.48550331592559814,
+        0.07521799951791763,
+        -2.2741541862487793
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        -0.9363187932373431,
+        0.0,
+        0.35115113189418246
+      ],
+      "goal_position": [
+        6.127074241638184,
+        0.07521799951791763,
+        -0.058398813009262085
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        -0.6195884345193079,
+        0.0,
+        0.7849268576179015
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 7.542964935302734
+    },
+    {
+      "task_index": 117,
+      "episode_id": "pLe4wQe7qrG_007",
+      "scene_id": "pLe4wQe7qrG",
+      "start_position": [
+        0.3021456003189087,
+        0.07521799951791763,
+        0.3053048849105835
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        -0.6825761943669189,
+        0.0,
+        0.7308144353278567
+      ],
+      "goal_position": [
+        7.522895336151123,
+        0.07521799951791763,
+        0.29623550176620483
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        -0.701716696496252,
+        0.0,
+        0.7124560883720392
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 7.22993278503418
+    },
+    {
+      "task_index": 118,
+      "episode_id": "pLe4wQe7qrG_008",
+      "scene_id": "pLe4wQe7qrG",
+      "start_position": [
+        -0.8125380873680115,
+        0.11701895296573639,
+        -1.2657057046890259
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        -0.8169100558832082,
+        0.0,
+        0.5767650826782891
+      ],
+      "goal_position": [
+        7.725625038146973,
+        0.07521799951791763,
+        -0.49796414375305176
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        -0.7080140883174459,
+        0.0,
+        0.7061983083695512
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 8.710098266601562
+    },
+    {
+      "task_index": 119,
+      "episode_id": "pLe4wQe7qrG_012",
+      "scene_id": "pLe4wQe7qrG",
+      "start_position": [
+        -1.797245979309082,
+        0.07521799951791763,
+        0.17945615947246552
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        -0.8047030846378525,
+        0.0,
+        0.5936774760544022
+      ],
+      "goal_position": [
+        6.588116645812988,
+        0.07521799951791763,
+        0.3296491503715515
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        -0.7049045539246577,
+        0.0,
+        0.7093021710500254
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 8.470909118652344
+    },
+    {
+      "task_index": 120,
+      "episode_id": "pLe4wQe7qrG_016",
+      "scene_id": "pLe4wQe7qrG",
+      "start_position": [
+        -0.3235087990760803,
+        0.10309089720249176,
+        -2.026442050933838
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        -0.9297829570287504,
+        0.0,
+        0.3681082080297489
+      ],
+      "goal_position": [
+        8.393720626831055,
+        0.07521799951791763,
+        0.1994423121213913
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        -0.6941423264925662,
+        0.0,
+        0.7198377807336092
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 9.47161865234375
+    },
+    {
+      "task_index": 121,
+      "episode_id": "pLe4wQe7qrG_017",
+      "scene_id": "pLe4wQe7qrG",
+      "start_position": [
+        -1.2652180194854736,
+        0.07521799951791763,
+        2.414476156234741
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        -0.4160838118024582,
+        0.0,
+        0.9093262679346378
+      ],
+      "goal_position": [
+        6.773580551147461,
+        0.12707312405109406,
+        1.6454644203186035
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        -0.9444333719740243,
+        0.0,
+        0.3287029143493775
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 9.219534873962402
+    },
+    {
+      "task_index": 122,
+      "episode_id": "x8F5xyUWy9e_000",
+      "scene_id": "x8F5xyUWy9e",
+      "start_position": [
+        1.1120191812515259,
+        0.04610800743103027,
+        1.9474817514419556
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        -0.20776313650747025,
+        0.0,
+        0.9781791651372351
+      ],
+      "goal_position": [
+        3.2927474975585938,
+        0.04610800743103027,
+        -3.2106034755706787
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        -0.17362864636963415,
+        0.0,
+        0.9848111967071904
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 5.602780342102051
+    },
+    {
+      "task_index": 123,
+      "episode_id": "x8F5xyUWy9e_001",
+      "scene_id": "x8F5xyUWy9e",
+      "start_position": [
+        2.899526357650757,
+        0.04610800743103027,
+        -6.504345893859863
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        0.9929515041550496,
+        0.0,
+        0.11852134995950939
+      ],
+      "goal_position": [
+        2.281372547149658,
+        0.04610800743103027,
+        -0.49419939517974854
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        -0.9872313899709747,
+        0.0,
+        0.1592927577009614
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 6.182419776916504
+    },
+    {
+      "task_index": 124,
+      "episode_id": "x8F5xyUWy9e_002",
+      "scene_id": "x8F5xyUWy9e",
+      "start_position": [
+        0.7904764413833618,
+        0.04610800743103027,
+        -7.463308334350586
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        -0.9832923116690926,
+        0.0,
+        0.18203359528518934
+      ],
+      "goal_position": [
+        3.0193605422973633,
+        0.04610800743103027,
+        -1.3916572332382202
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        -0.9905009864364896,
+        0.0,
+        0.13750562122451904
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 6.471667766571045
+    },
+    {
+      "task_index": 125,
+      "episode_id": "x8F5xyUWy9e_003",
+      "scene_id": "x8F5xyUWy9e",
+      "start_position": [
+        1.2793705463409424,
+        0.04610800743103027,
+        1.1711845397949219
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        0.09711627840904564,
+        0.0,
+        0.9952730421688195
+      ],
+      "goal_position": [
+        2.508584499359131,
+        0.04610800743103027,
+        -4.746935844421387
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        -0.3983619824068191,
+        0.0,
+        0.9172282872725356
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 6.618943214416504
+    },
+    {
+      "task_index": 126,
+      "episode_id": "x8F5xyUWy9e_004",
+      "scene_id": "x8F5xyUWy9e",
+      "start_position": [
+        2.3750991821289062,
+        0.04610800743103027,
+        -4.585023880004883
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        0.9136765502342992,
+        0.0,
+        0.4064420765028521
+      ],
+      "goal_position": [
+        0.18997862935066223,
+        0.04610800743103027,
+        1.9069039821624756
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        0.9971667882926292,
+        0.0,
+        0.07522231268821027
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 7.164273262023926
+    },
+    {
+      "task_index": 127,
+      "episode_id": "x8F5xyUWy9e_005",
+      "scene_id": "x8F5xyUWy9e",
+      "start_position": [
+        2.3495421409606934,
+        0.04610800743103027,
+        -4.403299331665039
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        0.8958140596916335,
+        0.0,
+        0.4444290387213627
+      ],
+      "goal_position": [
+        -0.3945283889770508,
+        0.04610800743103027,
+        2.3879153728485107
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        0.9924674079623619,
+        0.0,
+        0.1225089553154001
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 7.613990783691406
+    },
+    {
+      "task_index": 128,
+      "episode_id": "x8F5xyUWy9e_007",
+      "scene_id": "x8F5xyUWy9e",
+      "start_position": [
+        0.4738229513168335,
+        0.04610800743103027,
+        2.4154489040374756
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        -0.04363218467620536,
+        0.0,
+        0.9990476627570787
+      ],
+      "goal_position": [
+        2.0780725479125977,
+        0.04610800743103027,
+        -3.9635565280914307
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        -0.5229480193674281,
+        0.0,
+        0.8523645751905015
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 7.036253452301025
+    },
+    {
+      "task_index": 129,
+      "episode_id": "x8F5xyUWy9e_008",
+      "scene_id": "x8F5xyUWy9e",
+      "start_position": [
+        0.7178728580474854,
+        0.04610800743103027,
+        -4.281227111816406
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        0.9992598006300446,
+        0.0,
+        0.038468829522141826
+      ],
+      "goal_position": [
+        -1.2232314348220825,
+        0.04610800743103027,
+        3.7008001804351807
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        0.9298387182246359,
+        0.0,
+        0.36796733291199396
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 8.405632972717285
+    },
+    {
+      "task_index": 130,
+      "episode_id": "x8F5xyUWy9e_010",
+      "scene_id": "x8F5xyUWy9e",
+      "start_position": [
+        2.8904552459716797,
+        0.04610800743103027,
+        -9.323745727539062
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        0.9985722779850675,
+        0.0,
+        0.05341727847534857
+      ],
+      "goal_position": [
+        2.2735044956207275,
+        0.04610800743103027,
+        -0.5053405165672302
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        -0.9875162164423621,
+        0.0,
+        0.15751737130666515
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 8.94504165649414
+    },
+    {
+      "task_index": 131,
+      "episode_id": "x8F5xyUWy9e_011",
+      "scene_id": "x8F5xyUWy9e",
+      "start_position": [
+        2.6676125526428223,
+        0.04610800743103027,
+        -4.898479461669922
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        0.9174497003443876,
+        0.0,
+        0.3978517906683261
+      ],
+      "goal_position": [
+        0.27260053157806396,
+        0.04610800743103027,
+        2.339592695236206
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        0.9980535665690281,
+        0.0,
+        0.06236247476521986
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 8.009052276611328
+    },
+    {
+      "task_index": 132,
+      "episode_id": "x8F5xyUWy9e_012",
+      "scene_id": "x8F5xyUWy9e",
+      "start_position": [
+        -0.4070606231689453,
+        0.04610800743103027,
+        4.138040542602539
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        -0.09204799366456626,
+        0.0,
+        0.9957545716000142
+      ],
+      "goal_position": [
+        1.196461796760559,
+        0.04610800743103027,
+        -3.8500261306762695
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        -0.14801314271124896,
+        0.0,
+        0.9889853940199216
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 8.157422065734863
+    },
+    {
+      "task_index": 133,
+      "episode_id": "x8F5xyUWy9e_014",
+      "scene_id": "x8F5xyUWy9e",
+      "start_position": [
+        -0.27023088932037354,
+        0.04610800743103027,
+        3.3875675201416016
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        -0.09227192679848437,
+        0.0,
+        0.9957338457263041
+      ],
+      "goal_position": [
+        2.709311008453369,
+        0.04610800743103027,
+        -5.691136360168457
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        -0.30820552797669754,
+        0.0,
+        0.9513197950871227
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 9.754694938659668
+    },
+    {
+      "task_index": 134,
+      "episode_id": "x8F5xyUWy9e_015",
+      "scene_id": "x8F5xyUWy9e",
+      "start_position": [
+        1.7666627168655396,
+        0.04610800743103027,
+        -8.582287788391113
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        0.9972696408779463,
+        0.0,
+        0.07384621441327936
+      ],
+      "goal_position": [
+        0.6460843086242676,
+        0.04610800743103027,
+        0.8117328882217407
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        0.9992293397657394,
+        0.0,
+        0.03925208977015873
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 9.465900421142578
+    },
+    {
+      "task_index": 135,
+      "episode_id": "zsNo4HB9uLZ_000",
+      "scene_id": "zsNo4HB9uLZ",
+      "start_position": [
+        13.056796073913574,
+        0.17162801325321198,
+        -1.3244786262512207
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        0.992786907886133,
+        0.0,
+        0.11989226634729559
+      ],
+      "goal_position": [
+        10.376280784606934,
+        0.4205719828605652,
+        2.2824387550354004
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        0.8264418034802214,
+        0.0,
+        0.5630221536141887
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 5.00128173828125
+    },
+    {
+      "task_index": 136,
+      "episode_id": "zsNo4HB9uLZ_001",
+      "scene_id": "zsNo4HB9uLZ",
+      "start_position": [
+        6.276796340942383,
+        0.17162801325321198,
+        -0.35370683670043945
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        -0.7032022486755366,
+        0.0,
+        0.710989871557724
+      ],
+      "goal_position": [
+        12.982261657714844,
+        0.17162801325321198,
+        -0.42755991220474243
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        -0.7032022486755366,
+        0.0,
+        0.710989871557724
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 6.705872058868408
+    },
+    {
+      "task_index": 137,
+      "episode_id": "zsNo4HB9uLZ_003",
+      "scene_id": "zsNo4HB9uLZ",
+      "start_position": [
+        12.2728910446167,
+        0.17162801325321198,
+        -2.0576956272125244
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        -0.9997572783381652,
+        0.0,
+        0.02203144139325647
+      ],
+      "goal_position": [
+        10.475467681884766,
+        0.20022611320018768,
+        4.042411804199219
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        0.9408804051959155,
+        0.0,
+        0.3387389306211641
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 6.727421760559082
+    },
+    {
+      "task_index": 138,
+      "episode_id": "zsNo4HB9uLZ_004",
+      "scene_id": "zsNo4HB9uLZ",
+      "start_position": [
+        3.1093132495880127,
+        0.17162801325321198,
+        -0.1329095959663391
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        -0.7102355010395666,
+        0.0,
+        0.7039641560925357
+      ],
+      "goal_position": [
+        10.768838882446289,
+        0.17162801325321198,
+        -0.06497509777545929
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        -0.7102355010395666,
+        0.0,
+        0.7039641560925357
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 7.65982723236084
+    },
+    {
+      "task_index": 139,
+      "episode_id": "zsNo4HB9uLZ_005",
+      "scene_id": "zsNo4HB9uLZ",
+      "start_position": [
+        12.919297218322754,
+        0.17162801325321198,
+        -2.2222628593444824
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        0.9974614566433644,
+        0.0,
+        0.07120844409827902
+      ],
+      "goal_position": [
+        9.389243125915527,
+        0.19966068863868713,
+        4.042418479919434
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        0.8657725314745682,
+        0.0,
+        0.500437732134696
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 7.768252372741699
+    },
+    {
+      "task_index": 140,
+      "episode_id": "zsNo4HB9uLZ_006",
+      "scene_id": "zsNo4HB9uLZ",
+      "start_position": [
+        8.19593620300293,
+        0.17162801325321198,
+        -2.532776117324829
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        -0.7638894059555582,
+        0.0,
+        0.6453471743711786
+      ],
+      "goal_position": [
+        15.381221771240234,
+        0.17162801325321198,
+        0.14151081442832947
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        -0.8604299004094965,
+        0.0,
+        0.509568824086898
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 7.79719352722168
+    },
+    {
+      "task_index": 141,
+      "episode_id": "zsNo4HB9uLZ_007",
+      "scene_id": "zsNo4HB9uLZ",
+      "start_position": [
+        5.334011554718018,
+        0.17162801325321198,
+        0.16297638416290283
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        -0.6796374207619575,
+        0.0,
+        0.7335482099358118
+      ],
+      "goal_position": [
+        12.82502555847168,
+        0.17162801325321198,
+        -0.4093971848487854
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        -0.6796374207619575,
+        0.0,
+        0.7335482099358118
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 7.5128493309021
+    },
+    {
+      "task_index": 142,
+      "episode_id": "zsNo4HB9uLZ_009",
+      "scene_id": "zsNo4HB9uLZ",
+      "start_position": [
+        12.766836166381836,
+        0.17162801325321198,
+        0.7695866823196411
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        0.5979231459397256,
+        0.0,
+        0.8015534364903825
+      ],
+      "goal_position": [
+        4.0599141120910645,
+        0.17162801325321198,
+        -0.41608092188835144
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        0.6650174902954226,
+        0.0,
+        0.7468277830940528
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 8.802288055419922
+    },
+    {
+      "task_index": 143,
+      "episode_id": "zsNo4HB9uLZ_010",
+      "scene_id": "zsNo4HB9uLZ",
+      "start_position": [
+        12.533475875854492,
+        0.17162801325321198,
+        -4.351191997528076
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        0.9999442892664637,
+        0.0,
+        0.01055548972747008
+      ],
+      "goal_position": [
+        10.979113578796387,
+        0.2975119352340698,
+        3.56604266166687
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        0.9570653773513538,
+        0.0,
+        0.2898721502236993
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 8.34392261505127
+    },
+    {
+      "task_index": 144,
+      "episode_id": "zsNo4HB9uLZ_011",
+      "scene_id": "zsNo4HB9uLZ",
+      "start_position": [
+        3.8264541625976562,
+        0.17162801325321198,
+        -0.38111087679862976
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        -0.7175928958997043,
+        0.0,
+        0.6964628028504295
+      ],
+      "goal_position": [
+        12.282451629638672,
+        0.17162801325321198,
+        -0.12834018468856812
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        -0.7175928958997043,
+        0.0,
+        0.6964628028504295
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 8.4597749710083
+    },
+    {
+      "task_index": 145,
+      "episode_id": "zsNo4HB9uLZ_012",
+      "scene_id": "zsNo4HB9uLZ",
+      "start_position": [
+        7.861131191253662,
+        0.17162801325321198,
+        -2.4943108558654785
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        -0.7564451105142288,
+        0.0,
+        0.6540571800531786
+      ],
+      "goal_position": [
+        12.58209228515625,
+        0.17162801325321198,
+        2.4230270385742188
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        -0.9978609834737083,
+        0.0,
+        0.0653716885270962
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 8.52116870880127
+    },
+    {
+      "task_index": 146,
+      "episode_id": "zsNo4HB9uLZ_013",
+      "scene_id": "zsNo4HB9uLZ",
+      "start_position": [
+        12.725875854492188,
+        0.17162801325321198,
+        -3.534118175506592
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        0.9916632549678033,
+        0.0,
+        0.12885646567658784
+      ],
+      "goal_position": [
+        6.665712356567383,
+        0.17162801325321198,
+        1.4418120384216309
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        0.9235373123129104,
+        0.0,
+        0.38350858238877233
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 8.849105834960938
+    },
+    {
+      "task_index": 147,
+      "episode_id": "zsNo4HB9uLZ_014",
+      "scene_id": "zsNo4HB9uLZ",
+      "start_position": [
+        2.7700984477996826,
+        0.17162801325321198,
+        0.1439530998468399
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        -0.6922818251323257,
+        0.0,
+        0.7216272407493054
+      ],
+      "goal_position": [
+        12.328458786010742,
+        0.17162801325321198,
+        -0.2529818117618561
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        -0.6922818251323257,
+        0.0,
+        0.7216272407493054
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 9.566598892211914
+    },
+    {
+      "task_index": 148,
+      "episode_id": "zsNo4HB9uLZ_016",
+      "scene_id": "zsNo4HB9uLZ",
+      "start_position": [
+        0.8217298984527588,
+        0.17162801325321198,
+        0.07327470183372498
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        -0.7067274468186682,
+        0.0,
+        0.7074859121658653
+      ],
+      "goal_position": [
+        10.520715713500977,
+        0.17162801325321198,
+        0.06287125498056412
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        -0.7067274468186682,
+        0.0,
+        0.7074859121658653
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 9.698991775512695
+    },
+    {
+      "task_index": 149,
+      "episode_id": "zsNo4HB9uLZ_017",
+      "scene_id": "zsNo4HB9uLZ",
+      "start_position": [
+        12.907574653625488,
+        0.17162801325321198,
+        -2.6165006160736084
+      ],
+      "start_rotation_xyzw": [
+        0.0,
+        0.9750345757998241,
+        0.0,
+        0.22205309273877974
+      ],
+      "goal_position": [
+        5.347658634185791,
+        0.17162801325321198,
+        2.012709856033325
+      ],
+      "goal_rotation_xyzw": [
+        0.0,
+        0.9020968385460274,
+        0.0,
+        0.43153365324764953
+      ],
+      "success_radius_m": 1.0,
+      "initial_geodesic_distance_m": 9.441686630249023
+    }
+  ]
+}

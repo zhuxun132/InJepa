@@ -1,0 +1,56 @@
+{
+  "habitat_lab_version": "0.2.4",
+  "habitat_sim_version": "0.2.4",
+  "habitat_lab_commit": "1639e1ae732ba1e84199a1a04b79c7243c3f8586",
+  "habitat_sim_commit": "f179b584bcd713c5a2a998132211e2cae881d6d1",
+  "rgb_width": 640,
+  "rgb_height": 480,
+  "rgb_horizontal_fov_deg": 79,
+  "rgb_position_m": [
+    0,
+    1.25,
+    0
+  ],
+  "agent_height_m": 1.5,
+  "agent_radius_m": 0.1,
+  "allow_sliding": true,
+  "enable_physics": false,
+  "forward_step_m": 0.25,
+  "turn_angle_deg": 15,
+  "max_environment_control_steps": 200,
+  "arrival_geodesic_threshold_m": 1.0,
+  "arrival_comparison": "strictly_less_than",
+  "arrival_requires_goal_orientation": false,
+  "executed_steps_per_plan": 1,
+  "evaluation_seeds": [
+    0,
+    1,
+    2
+  ],
+  "primary_model": {
+    "K": 8,
+    "H": 4,
+    "consistency_weight": 1.0,
+    "score_epsilon": 1e-06
+  },
+  "scene_asset_layout": "mp3d/<scene_id>/<scene_id>.glb",
+  "planning_configuration_selection": {
+    "parameters": [
+      "K",
+      "H",
+      "lambda_c"
+    ],
+    "selection_data": "The fixed offline dev subset from validation trajectories; see offline_diagnostic_pairs.json.",
+    "selection_metric_groups": [
+      "Q Future Alignment",
+      "F Prediction Error",
+      "G Local / G Goal accuracy",
+      "Intent Realization Error"
+    ],
+    "method": "Select the three default planning hyperparameters using the four dev metric groups.",
+    "fixed_before_inspecting_clean150_results": true,
+    "closed_loop_role": "Report navigation performance in unseen scenes; main results and configuration comparisons share the same fixed Clean150 tasks.",
+    "dev_role": "Provide complementary analysis of internal model behavior.",
+    "search_scope": "Limited hyperparameter search; the experiments prioritize evaluating the intention first architecture over exhaustive performance optimization."
+  }
+}

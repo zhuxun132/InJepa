@@ -1,0 +1,136 @@
+{
+  "VJEPA": {
+    "model": {
+      "activation_checkpointing": true,
+      "actor_depth": 3,
+      "attention_backend": "auto",
+      "context_size": 4,
+      "dropout": 0.1,
+      "ffn_dim": 2048,
+      "forward_depth": 6,
+      "global_seed": 3072,
+      "goal_sampling_horizon": 4,
+      "grid_side": 24,
+      "heads": 16,
+      "hidden_dim": 768,
+      "horizon": 4,
+      "kl_beta": 0.05,
+      "latent_dim": 768,
+      "memory_norm": true,
+      "modes": 4,
+      "posterior_residual_init_std": 0.001,
+      "prediction_norm": "layernorm",
+      "proposal_architecture": "stochastic_recurrent",
+      "proposal_depth": 6,
+      "representation": "raw",
+      "retain_activation_blocks": [
+        "proposal.future.blocks.5",
+        "forward_core.blocks.0",
+        "forward_core.blocks.1",
+        "forward_core.blocks.2",
+        "forward_core.blocks.3",
+        "forward_core.blocks.4",
+        "forward_core.blocks.5",
+        "actor.blocks.0",
+        "actor.blocks.1",
+        "actor.blocks.2"
+      ],
+      "selector_enabled": false,
+      "sigma_epsilon": 0.0001,
+      "stability": {
+        "attention_temperature_init_factor": 0.3072,
+        "attention_temperature_max_factor": 2.0,
+        "ln_eps": 0.0001,
+        "ln_gain_bound": 2.0,
+        "posterior_log_scale_ratio_bound": 0.6931471805599453,
+        "posterior_mean_delta_bound": 4.0,
+        "prior_log_scale_bound": 0.6931471805599453,
+        "prior_mean_bound": 5.0,
+        "qk_eps": 0.0001,
+        "value_rms_bound": 2.0
+      },
+      "training_q_horizon": 1,
+      "training_qkv_normalization_backend": "inductor",
+      "trajectory_latent_dim": 128
+    },
+    "training": {
+      "accumulation_steps": 1,
+      "effective_global_batch": 128,
+      "epochs": 30,
+      "microbatch_per_rank": 32,
+      "optimization": {
+        "gradient_clip_norms": {
+          "agf": 1.0,
+          "q": 1.0
+        },
+        "peak_learning_rates": {
+          "agf": 0.0003,
+          "q": 0.0002
+        },
+        "scheme": "q_agf_isolated_v1"
+      },
+      "optimizer": {
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "eps": 1e-08,
+        "name": "AdamW",
+        "weight_decay": 0.001
+      },
+      "qg_objective": "posterior_sample",
+      "run_kind": "formal",
+      "schedule": "cosine_to_zero",
+      "warmup_fraction": 0.01,
+      "world_size": 4
+    },
+    "runtime": {
+      "precision": "bf16-mixed",
+      "workers": 8,
+      "prefetch": 2,
+      "torch_threads_per_rank": 8
+    },
+    "encoder_identity": {
+      "checkpoint_sha256": "848a77c33cc9e6649ed2119c9bea1e2c569bcdab9539ff3e7c02ccc2959ddf4d",
+      "pool_sha256": "815079d56d54eea6ad8f1a2a5ace5bdc6384217bc8d10477ec3b1a9f67c8a22c",
+      "preprocess_sha256": "da5f73a48fb8f71dee05045b829f1a288a431c8d42a5e76d5614f34a0614e7a3",
+      "vjepa_source_commit": "204698b45b3712590f06245fbfba32d3be539812",
+      "whitening_sha256": null
+    },
+    "source_config_sha256": "0cfda0ed31292851d2eb452487adfb600dce53c5e0f005e903cbf8b7291be5d6",
+    "reported_checkpoint_epoch": 12,
+    "loss_weights": {
+      "Q": 1.0,
+      "F": 1.0,
+      "G_local": 0.1,
+      "G_goal": 0.05,
+      "QG": 0.1
+    },
+    "variant_identity": {
+      "loss_spec_sha": "d432ce2924283d74b08bd25f06e7e2c5dfe5017cebdfaaab0aec570eca3820d5",
+      "transform_spec_sha": "d432ce2924283d74b08bd25f06e7e2c5dfe5017cebdfaaab0aec570eca3820d5",
+      "variant_id": "context4_stochastic_recurrent_raw_v1"
+    },
+    "reported_model": {
+      "checkpoint_sha256": "181a1579c0158d29e44c23142e4395c99dd338d9e9e08224634501b6146a173e",
+      "epoch": 12,
+      "trainable_parameter_count": 135235064,
+      "training_code_sha256": "3dc7d7ea4cea98418d9f228decc74fb72a3833b80bad6393df92a65427b3f512",
+      "initialization": "Independent scratch initialization of Q/A/G/F with seed 3072; pretrained visual encoder only.",
+      "checkpoint_role": "Trained navigation model; distinct from encoder_identity.checkpoint_sha256."
+    },
+    "field_semantics": {
+      "latent_dim": "Visual feature width D, not stochastic candidate dimension.",
+      "trajectory_latent_dim": "Stochastic candidate dimension L.",
+      "modes": "Stored constructor default; actual evaluation K is specified by the planning call.",
+      "horizon": "Configured deployment horizon; training_q_horizon specifies Q supervision."
+    },
+    "data_protocol": {
+      "source_index": "trajectory_index.jsonl",
+      "scene_split": "scene_splits.json",
+      "shared_RGB_and_actions": true,
+      "shared_origin_goal_sampling": true,
+      "encoder_specific_feature_cache": true
+    }
+  }
+}

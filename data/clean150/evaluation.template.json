@@ -1,0 +1,80 @@
+{
+  "actions": {
+    "BOS": -1,
+    "MOVE_FORWARD": 1,
+    "STOP": 0,
+    "TURN_LEFT": 2,
+    "TURN_RIGHT": 3,
+    "forward_step": 0.25,
+    "turn_angle_deg": 15.0
+  },
+  "agent": {
+    "allow_sliding": true,
+    "height": 1.5,
+    "physics": false,
+    "radius": 0.1
+  },
+  "assets": {
+    "episodes": "data/clean150/episodes150.json.gz",
+    "episodes_sha256": "3988c711cade807cc08bf6b93fa6378657d5c4209d0ad8215fb9874138938258",
+    "habitat_lab_revision": "1639e1ae732ba1e84199a1a04b79c7243c3f8586",
+    "habitat_lab_root": null,
+    "habitat_sim_revision": "f179b584bcd713c5a2a998132211e2cae881d6d1",
+    "habitat_sim_root": null,
+    "scene_root": "/path/to/scene_root"
+  },
+  "diagnostics": {
+    "imagined_state_persistence": false,
+    "policy_observation": "rgb_only"
+  },
+  "episode_count": 150,
+  "evaluation_profile": "distance_stratified_visible_v1",
+  "habitat_version": "0.2.4",
+  "latency": {
+    "cuda_synchronize": true,
+    "warmup_steps": 5
+  },
+  "max_episode_steps": 200,
+  "policy_observation_keys": [
+    "rgb",
+    "imagegoal",
+    "factual_history"
+  ],
+  "privileged_observation_keys": [
+    "depth",
+    "gps",
+    "compass",
+    "pose",
+    "map",
+    "geodesic_distance",
+    "collision"
+  ],
+  "rgb": {
+    "height": 480,
+    "hfov": 79.0,
+    "position": [
+      0.0,
+      1.25,
+      0.0
+    ],
+    "width": 640
+  },
+  "scene_ids": [
+    "2azQ1b91cZZ",
+    "8194nk5LbLH",
+    "EU6Fwq7SyZv",
+    "QUCTc6BB5sX",
+    "TbHJrupSAjP",
+    "X7HyMhZNoso",
+    "Z6MFQCViBuw",
+    "oLBMNvg9in8",
+    "pLe4wQe7qrG",
+    "x8F5xyUWy9e",
+    "zsNo4HB9uLZ"
+  ],
+  "split": "val",
+  "success_distance": 1.0,
+  "task": "ImageNav",
+  "warmup_steps": 5,
+  "taskset_variant": "view_aligned_clean150_v1"
+}
