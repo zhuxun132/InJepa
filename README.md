@@ -25,7 +25,7 @@ Keep `PYTHONHASHSEED=0` for both preparation and evaluation, including runs with
 
 `SCENE_ROOT` contains `mp3d/<scene_id>/<scene_id>.glb` and the matching `.navmesh`. Obtain the MP3D assets through the [Matterport3D dataset](https://niessner.github.io/Matterport/) and retain the downloaded `mp3d_habitat.zip` at `MP3D_ARCHIVE`. The exact 11 scenes, all 150 start/goal poses and goal-image orientations are in [data/clean150_tasks.json](data/clean150_tasks.json). Follow [Clean150 data](docs/CLEAN150.md) to check the scene files, then load the supplied task file directly to construct the same 150 tasks. It already fixes the task selection and order.
 
-Use the E12 checkpoint for non-commercial academic research under the applicable StreamVLN and MP3D terms. Keep the [weight usage notice](weights/injepa/README.md) and linked data agreements with redistributed copies; the code's MIT license does not replace these terms.
+Use the E12 checkpoint for non-commercial academic research under the applicable StreamVLN and MP3D terms. Keep the [weight usage notice](weights/injepa/README.md) and linked data agreements with redistributed copies. The code's MIT license does not replace these terms.
 
 Retrieve the E12 checkpoint using Git LFS:
 
@@ -78,7 +78,7 @@ python scripts/evaluate.py --method injepa \
   --output runs/injepa_posthoc_f_one_task
 ```
 
-Each run stores its resolved configuration beside the result directory. For InJepa, `result.json` contains the per-task results in its `episodes` array; the other methods write their results inside the same chosen directory. Traces and videos follow the options in the selected configuration. Choose a new result directory for each run.
+Each run stores its resolved configuration beside the result directory. For InJepa, `result.json` contains the per-task results in its `episodes` array. The other methods write their results inside the same chosen directory. Traces and videos follow the options in the selected configuration. Choose a new result directory for each run.
 
 ## Training and baselines
 
@@ -97,4 +97,4 @@ Each run stores its resolved configuration beside the result directory. For InJe
 | `weights/injepa/` | E12 checkpoint and its training configuration |
 | `configs/` | Place your resolved training configurations here |
 
-Third-party code retains its original license and attribution; see [THIRD_PARTY.md](THIRD_PARTY.md).
+Third-party code retains its original license and attribution. [THIRD_PARTY.md](THIRD_PARTY.md) identifies the source and license of each component.

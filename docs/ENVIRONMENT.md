@@ -20,7 +20,7 @@ git clone https://github.com/facebookresearch/habitat-sim.git third_party/habita
 git -C third_party/habitat-sim checkout f179b584bcd713c5a2a998132211e2cae881d6d1
 ```
 
-Keep these Git checkouts: the reset/replay check verifies their revisions against the installed Habitat packages. Also retain Habitat-Sim's original `.tar.bz2` package in the conda package cache; the check compares the installed Python and native-extension files with that archive. Keep it at the `package_tarball_full_path` recorded in `$CONDA_PREFIX/conda-meta/habitat-sim-0.2.4-*.json` when cleaning conda caches. Set `HABITAT_LAB_SOURCE` and `HABITAT_SIM_SOURCE` to their absolute paths and `HABITAT_PREFIX` to `$CONDA_PREFIX`.
+Keep these Git checkouts: the reset/replay check verifies their revisions against the installed Habitat packages. Also retain Habitat-Sim's original `.tar.bz2` package in the conda package cache. The check compares the installed Python and native-extension files with that archive. Keep it at the `package_tarball_full_path` recorded in `$CONDA_PREFIX/conda-meta/habitat-sim-0.2.4-*.json` when cleaning conda caches. Set `HABITAT_LAB_SOURCE` and `HABITAT_SIM_SOURCE` to their absolute paths and `HABITAT_PREFIX` to `$CONDA_PREFIX`.
 
 Before running any preparation or evaluation command, set the interpreter hash seed in the shell:
 
@@ -28,7 +28,7 @@ Before running any preparation or evaluation command, set the interpreter hash s
 export PYTHONHASHSEED=0
 ```
 
-Keep this value at 0 across evaluation seeds; change method randomness through `scripts/evaluate.py --seed`.
+Keep this value at 0 across evaluation seeds. Change method randomness through `scripts/evaluate.py --seed`.
 
 Install the V-JEPA source and encoder weights using Meta's official release below. Follow the [V-JEPA asset and license notes](DATA_LICENSES.md#v-jepa-21-encoder-weights), retaining the upstream copyright and license notices:
 
@@ -65,4 +65,4 @@ python -m pip install -r environments/baselines.txt
 
 For LWM training, install the selected variant, for example `python -m pip install -e baselines/lwm_croco`. Use separate environments for the two LWM variants, which expose the same package names. The common evaluation launcher selects each variant's source in a separate process.
 
-NoMaD uses `diffusers==0.27.2`, `huggingface_hub==0.24.7`, `efficientnet-pytorch`, and `warmup-scheduler`; install its local `baselines/nomad/official/train` package. RAE uses `torchdiffeq==0.2.5` and `decord==0.6.0`. Its source checkout procedure is in [BASELINES.md](BASELINES.md).
+NoMaD uses `diffusers==0.27.2`, `huggingface_hub==0.24.7`, `efficientnet-pytorch`, and `warmup-scheduler`. Install its local `baselines/nomad/official/train` package. RAE uses `torchdiffeq==0.2.5` and `decord==0.6.0`. Its source checkout procedure is in [BASELINES.md](BASELINES.md).

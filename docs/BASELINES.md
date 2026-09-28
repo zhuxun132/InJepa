@@ -25,9 +25,9 @@ python scripts/prepare_codebooks.py --rgb-index "$RGB_INDEX" \
   --output "$CODEBOOKS" --seed 0 --threads 8 --physical-dedup
 ```
 
-Resolve the RGB source paths in `configs/server_rgb_sources.json` first, and set `POSE_OUTPUT`, `RGB_INDEX` and `CODEBOOKS` to new local directories. `data/lwm_replay` supplies the matched original R2R/RxR episode poses (`R2R_MATCHED_TRAIN_POSES.json`, `RXR_MATCHED_TRAIN_POSES.json`) and `BUILDING_SPLIT_REPLAY_CENSUS.json`. Its asset manifest lists the 61 training/dev scenes and their file hashes. Install these scenes under the same MP3D layout before replay. Replay recovers poses from recorded actions; RGB preparation reads the released JPEGs. Keep the generated receipts with the data. The fitted experiment centres are in `data/lwm_action_centers.json` and `data/lwm_trajectory_centers.json` and in the respective tokenizer directories.
+Resolve the RGB source paths in `configs/server_rgb_sources.json` first, and set `POSE_OUTPUT`, `RGB_INDEX` and `CODEBOOKS` to new local directories. `data/lwm_replay` supplies the matched original R2R/RxR episode poses (`R2R_MATCHED_TRAIN_POSES.json`, `RXR_MATCHED_TRAIN_POSES.json`) and `BUILDING_SPLIT_REPLAY_CENSUS.json`. Its asset manifest lists the 61 training/dev scenes and their file hashes. Install these scenes under the same MP3D layout before replay. Replay recovers poses from recorded actions. RGB preparation reads the released JPEGs. Keep the generated receipts with the data. The fitted experiment centres are in `data/lwm_action_centers.json` and `data/lwm_trajectory_centers.json` and in the respective tokenizer directories.
 
-For training, change to the selected variant directory and copy its `configs/train.json` to `train.local.json`. Set `codebooks`, `croco` and `output`; for LWM-VJEPA also set `vision.source_root` and `vision.checkpoint`. Train in stage order:
+For training, change to the selected variant directory and copy its `configs/train.json` to `train.local.json`. Set `codebooks`, `croco` and `output`. For LWM-VJEPA also set `vision.source_root` and `vision.checkpoint`. Train in stage order:
 
 ```bash
 torchrun --standalone --nproc_per_node=2 scripts/train_lwm.py --config train.local.json --stage wm
@@ -124,7 +124,7 @@ cp "$RAE_EXPORT"/evaluation_overlay/rae_stream/*.py third_party/rae_eval_runtime
 cp "$RAE_EXPORT"/evaluation_overlay/scripts/*.py third_party/rae_eval_runtime/scripts/
 ```
 
-Keep the public base commit as the checkout's HEAD. The evaluation overlay implements the experiment's Euler10 planner. Install the official decoder, latent statistics and DINOv2 assets at the paths checked by `rae_stream/assets.py`; use its pinned Hugging Face revision `a1d738ccfa7ae170945f210395d99dde8adb1805` for `facebook/dinov2-with-registers-base`.
+Keep the public base commit as the checkout's HEAD. The evaluation overlay implements the experiment's Euler10 planner. Install the official decoder, latent statistics and DINOv2 assets at the paths checked by `rae_stream/assets.py`. Use its pinned Hugging Face revision `a1d738ccfa7ae170945f210395d99dde8adb1805` for `facebook/dinov2-with-registers-base`.
 
 From each RAE runtime checkout, download the decoder/statistics into `models/`. Use the same dedicated encoder cache for training and evaluation:
 
@@ -160,7 +160,7 @@ python scripts/launch_rae_stream.py plan --config config/rae_stream.yaml \
   --manifest "$RAE_DATA/rae_stream_manifest.jsonl" --dry-run
 ```
 
-Connect the generated data to the paths in `config/rae_stream.yaml`, validate it, and qualify the selected batch layout. Set `RAE_HF_HOME` to the dedicated cache with the pinned visual assets and `RAE_GPUS` to three available physical GPU indices. Set `RAE_GPU_UUIDS` to their comma-separated GPU UUIDs in the same order; obtain them with `nvidia-smi --query-gpu=index,uuid --format=csv,noheader`:
+Connect the generated data to the paths in `config/rae_stream.yaml`, validate it, and qualify the selected batch layout. Set `RAE_HF_HOME` to the dedicated cache with the pinned visual assets and `RAE_GPUS` to three available physical GPU indices. Set `RAE_GPU_UUIDS` to their comma-separated GPU UUIDs in the same order. Obtain them with `nvidia-smi --query-gpu=index,uuid --format=csv,noheader`:
 
 ```bash
 ln -s "$RAE_DATA/data" data
