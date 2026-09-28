@@ -1,6 +1,6 @@
 # InJepa
 
-Code for **Intention First: Latent State Planning with Coupled JEPAs for Visual Navigation**.
+Code for **InJePA: Intention-First Latent Planning with Coupled JEPA World Models for Visual Navigation**.
 
 Start with the released E12 model on one fixed Clean150 task, then run all 150 tasks. Commands below run from the repository root on Linux.
 
