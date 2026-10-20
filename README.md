@@ -2,6 +2,8 @@
 
 Code for **InJePA: Intention-First Latent Planning with Coupled JEPA World Models for Visual Navigation**.
 
+**Paper:** [arXiv:2610.23896](https://arxiv.org/abs/2610.23896)
+
 Start with the released E12 model on one fixed Clean150 task, then run all 150 tasks. Commands below run from the repository root on Linux.
 
 ## 1. Set up the environment and assets
