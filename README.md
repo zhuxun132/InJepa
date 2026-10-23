@@ -101,9 +101,9 @@ Each run stores its resolved configuration beside the result directory. For InJe
 
 Third-party code retains its original license and attribution. [THIRD_PARTY.md](THIRD_PARTY.md) identifies the source and license of each component.
 
-## 📝 Citation
+## :pencil2: Citation
 
-If you find our paper and code useful in your research, please consider giving this repository a star ⭐ and citing our work:
+If you find our paper and code useful in your research, please consider giving this repository a star :star: and a citation :memo:.
 
 ```bibtex
 @article{zhou2026injepa,
