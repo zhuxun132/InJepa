@@ -100,3 +100,16 @@ Each run stores its resolved configuration beside the result directory. For InJe
 | `configs/` | Place your resolved training configurations here |
 
 Third-party code retains its original license and attribution. [THIRD_PARTY.md](THIRD_PARTY.md) identifies the source and license of each component.
+
+## 📝 Citation
+
+If you find our paper and code useful in your research, please consider giving this repository a star ⭐ and citing our work:
+
+```bibtex
+@article{zhou2026injepa,
+  title={InJePA: Intention-First Latent Planning with Coupled JEPA World Models for Visual Navigation},
+  author={Zhou, Siming and Ma, Bowen and Du, Ruiran and Zheng, Pengcheng and Zheng, Sheng and Han, Dongshen and Li, Zhijie and Dong, Wei and Mo, Fan and Zhang, Chaoning},
+  journal={arXiv preprint arXiv:2610.23896},
+  year={2026}
+}
+```
