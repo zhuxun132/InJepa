@@ -1,5 +1,7 @@
 # Train InJepa
 
+The configuration and commands on this page target the V-JEPA variant.
+
 Activate the [training environment](ENVIRONMENT.md) and start from the repository root:
 
 ```bash
