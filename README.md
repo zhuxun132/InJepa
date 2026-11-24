@@ -79,7 +79,7 @@ python scripts/evaluate.py --method injepa \
   --output runs/injepa_posthoc_f_one_task
 ```
 
-Each run stores its resolved configuration beside the result directory. For InJepa, `result.json` contains the per-task results in its `episodes` array. Traces and videos follow the options in the selected configuration. Choose a new result directory for each run.
+Each run stores its resolved configuration beside the result directory. `result.json` contains the per-task results in its `episodes` array. Traces and videos follow the options in the selected configuration. Choose a new result directory for each run.
 
 ## Training and evaluation
 
