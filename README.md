@@ -4,6 +4,14 @@ Code for **InJePA: Intention-First Latent Planning with Coupled JEPA World Model
 
 **Paper:** [arXiv:2610.23896](https://arxiv.org/abs/2610.23896)
 
+## Real Robot Navigation
+
+<p align="center">
+  <a href="https://github.com/user-attachments/assets/661d2c25-9638-4b26-a47a-7f3c4ef7d93e"><img src="docs/media/lite3-navigation.png" width="900" alt="Play the 56-second demo of four navigation methods on a Lite3 quadruped"></a>
+  <br>
+  <em>Zero-shot image-goal navigation on Lite3. Arrows show the action selected by each method.</em>
+</p>
+
 Start with the released E12 model on one fixed Clean150 task, then run all 150 tasks. Commands below run from the repository root on Linux.
 
 ## 1. Set up the environment and assets
